@@ -6,6 +6,7 @@
 - manifest.json carries no URLs; the app builds them from tag and file name and checks size and SHA-256.
 
 publish.py                 release dist/roads-*-v1.bin, write manifest.json (then commit and push)
+publish.py --dist DIR      the packs from another folder (the GitHub run)
 publish.py --dry-run       only write manifest.json
 publish.py --off / --on    emergency switch: enabled=false (the app removes its packs)
 publish.py --disable DE    switch single countries off (--enable DE to undo)
@@ -17,6 +18,8 @@ import re
 import subprocess
 import sys
 from pathlib import Path
+
+from countries import BY_ID
 
 B = Path(__file__).resolve().parent
 REPO = 'gena3ekiller/tespit-road-data'
@@ -42,28 +45,44 @@ def write_manifest(manifest):
 
 
 def existing_tags():
-    out = subprocess.run(['gh', 'release', 'list', '--repo', REPO, '--limit', '200', '--json', 'tagName'],
+    out = subprocess.run(['gh', 'release', 'list', '--repo', REPO, '--limit', '1000', '--json', 'tagName'],
                          capture_output=True, text=True)
     return {r['tagName'] for r in json.loads(out.stdout or '[]')} if out.returncode == 0 else set()
 
 
-def pack_date(data):
+def pack_header(data):
+    """Pack id, data date and cell count."""
     if data[:4] != b'TSRD' or data[4] != FORMAT:
         sys.exit('not a road pack of format 1')
-    return data[9:19].decode()
+    return data[7:9].decode(), data[9:19].decode(), int.from_bytes(data[19:23], 'little')
 
 
-def publish(dry_run):
-    files = sorted(DIST.glob(f'roads-*-v{FORMAT}.bin'))
+def publish(dry_run, dist):
+    files = sorted(dist.glob(f'roads-*-v{FORMAT}.bin'))
     if not files:
-        sys.exit('dist/ has no packs')
+        sys.exit(f'{dist} has no packs')
     manifest = load_manifest()
     changed, dates = {}, set()
     for path in files:
         country = re.match(r'roads-([A-Z]{2})-', path.name).group(1)
         data = path.read_bytes()
-        entry = {'file': path.name, 'size': len(data), 'sha256': sha256(data), 'dataDate': pack_date(data)}
-        if (manifest['packs'].get(country) or {}).get('sha256') == entry['sha256']:
+        header, data_date, cells = pack_header(data)
+        region = BY_ID.get(country)
+        if header != country or region is None:
+            print(f'{path.name}: unknown pack, skipped')
+            continue
+        if cells == 0:
+            # An extract without a single tagged road: nothing worth a download.
+            print(f'{country}: empty, skipped')
+            continue
+        previous = manifest['packs'].get(country) or {}
+        if previous.get('size') and len(data) < previous['size'] * 2 / 3:
+            # A broken or cut extract: the published pack stays.
+            print(f'{country}: {len(data)} bytes against {previous["size"]} published, skipped')
+            continue
+        entry = {'file': path.name, 'size': len(data), 'sha256': sha256(data), 'dataDate': data_date,
+                 'continent': region['continent'], 'countries': region['countries']}
+        if previous.get('sha256') == entry['sha256']:
             continue
         changed[country] = (path, entry)
         dates.add(entry['dataDate'])
@@ -82,7 +101,8 @@ def publish(dry_run):
         write_manifest(manifest)
         return
     notes = (f'Road data (speed limits, overtaking bans, stop and give-way signs, level crossings, zebra crossings), '
-             f'OpenStreetMap as of {date}: {", ".join(sorted(changed))}.\n\n'
+             f'OpenStreetMap as of {date}, {len(changed)} packs: {", ".join(sorted(changed))}.\n\n'
+             'Extracts from Geofabrik (download.geofabrik.de). '
              '© OpenStreetMap contributors, ODbL 1.0 — https://www.openstreetmap.org/copyright')
     subprocess.run(['gh', 'release', 'create', tag, *[str(p) for p, _ in changed.values()], '--repo', REPO,
                     '--title', f'Data {date}', '--notes', notes], check=True)
@@ -93,6 +113,7 @@ def publish(dry_run):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--dry-run', action='store_true')
+    parser.add_argument('--dist', type=Path, default=DIST)
     parser.add_argument('--off', action='store_true')
     parser.add_argument('--on', action='store_true')
     parser.add_argument('--disable')
@@ -111,7 +132,7 @@ def main():
         write_manifest(manifest)
         print('Now commit and push manifest.json.')
         return
-    publish(args.dry_run)
+    publish(args.dry_run, args.dist)
 
 
 if __name__ == '__main__':

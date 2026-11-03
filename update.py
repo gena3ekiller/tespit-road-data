@@ -1,33 +1,35 @@
 #!/usr/bin/env python3
-"""Downloads the country extracts, builds every pack, checks them and publishes a release.
+"""Downloads the extracts, builds the packs, checks them and publishes a release – on this Mac.
 
-update.py              all countries
-update.py CH LI        only these
-update.py --no-publish build and check only
+The whole world runs on GitHub (.github/workflows/build.yml); this is for single packs by hand.
 
-A pack whose size drops by more than a third against the published one is not published (a broken extract).
+update.py CH LI          these packs (ids from countries.py)
+update.py --no-publish   build and check only
+update.py --no-download  use the extracts already in raw/
+
+A pack whose size drops by more than a third against the published one is not published (publish.py).
 """
 import argparse
 import datetime
-import json
 import subprocess
 import sys
 import urllib.request
 from pathlib import Path
 
 from build_pack import build
+from countries import BY_ID, URL
 
 B = Path(__file__).resolve().parent
-COUNTRIES = {'CH': 'switzerland', 'LI': 'liechtenstein', 'AT': 'austria', 'DE': 'germany'}
-URL = 'https://download.geofabrik.de/europe/{}-latest.osm.pbf'
 
 
-def download(name):
-    target = B / 'raw' / f'{name}-latest.osm.pbf'
+def download(path):
+    target = B / 'raw' / (path.replace('/', '_') + '-latest.osm.pbf')
+    if target.exists() and getattr(download, 'skip', False):
+        return target
     part = target.with_suffix('.part')
     target.parent.mkdir(exist_ok=True)
-    print('download', URL.format(name), flush=True)
-    with urllib.request.urlopen(URL.format(name), timeout=120) as response, open(part, 'wb') as handle:
+    print('download', URL.format(path), flush=True)
+    with urllib.request.urlopen(URL.format(path), timeout=120) as response, open(part, 'wb') as handle:
         while chunk := response.read(1 << 20):
             handle.write(chunk)
     part.replace(target)
@@ -36,22 +38,16 @@ def download(name):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('countries', nargs='*')
+    parser.add_argument('packs', nargs='+')
     parser.add_argument('--no-publish', action='store_true')
     parser.add_argument('--no-download', action='store_true')
     args = parser.parse_args()
-    countries = [c.upper() for c in args.countries] or list(COUNTRIES)
+    download.skip = args.no_download
     date = datetime.date.today().isoformat()
-    manifest = json.loads((B / 'manifest.json').read_text()) if (B / 'manifest.json').exists() else {'packs': {}}
-    for country in countries:
-        name = COUNTRIES[country]
-        pbf = B / 'raw' / f'{name}-latest.osm.pbf'
-        if not args.no_download or not pbf.exists():
-            pbf = download(name)
-        stats = build(country, str(pbf), date, out_dir=str(B / 'dist'), work=str(B / 'work'))
-        previous = (manifest['packs'].get(country) or {}).get('size')
-        if previous and stats['size'] < previous * 2 / 3:
-            sys.exit(f'{country}: {stats["size"]} bytes against {previous} published, not publishing')
+    for pack in (p.upper() for p in args.packs):
+        region = BY_ID[pack]
+        pbfs = [str(download(path)) for path in region['paths']]
+        build(pack, pbfs, date, out_dir=str(B / 'dist'), work=str(B / 'work'))
     if args.no_publish:
         return
     subprocess.run([sys.executable, str(B / 'publish.py')], check=True)

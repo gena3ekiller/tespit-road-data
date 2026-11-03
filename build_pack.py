@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Builds one country's road pack for Tespit: speed limits, overtaking bans and road signs from OSM.
 
-Usage: build_pack.py CC raw/<country>-latest.osm.pbf YYYY-MM-DD
+Usage: build_pack.py CC YYYY-MM-DD raw/<extract>-latest.osm.pbf [more extracts of the same pack …]
 
-1. `osmium tags-filter` keeps the ways with a speed limit or an overtaking tag and the sign nodes.
+1. `osmium tags-filter` keeps the ways with a speed limit or an overtaking tag and the sign nodes; several
+   extracts (Spain and the Canary Islands) are merged after filtering.
 2. `osmium export` turns them into GeoJSON lines.
 3. The roads are simplified, cut into pieces of at most ~800 m and sorted into cells of 0.05°; each
    cell is one raw-deflate block, so the app reads only the cells around the car (format in README).
@@ -37,15 +38,50 @@ SIGN_STOP, SIGN_GIVE_WAY, SIGN_LEVEL_CROSSING, SIGN_ZEBRA = 1, 2, 3, 4
 
 NO_LIMIT = 0            # "none": a German motorway without limit
 
-# Implicit limits written as a country code (wiki „Key:maxspeed“, country defaults for cars).
+# Implicit limits written as a country code (wiki „Key:maxspeed“ and „Default speed limits“, cars). Only the
+# clear ones: a code whose value depends on time, season or region (NL:motorway, FI:motorway) stays unknown.
+# „XX:zone30“ and „XX:zone:30“ are read from the number (ZONE below).
 IMPLICIT = {
-    "DE:urban": 50, "DE:rural": 100, "DE:motorway": NO_LIMIT, "DE:zone30": 30, "DE:zone:30": 30, "DE:zone20": 20,
-    "DE:zone:20": 20, "DE:bicycle_road": 30,
-    "AT:urban": 50, "AT:rural": 100, "AT:trunk": 100, "AT:motorway": 130, "AT:zone30": 30, "AT:zone:30": 30,
-    "CH:urban": 50, "CH:rural": 80, "CH:trunk": 100, "CH:motorway": 120, "CH:zone30": 30, "CH:zone:30": 30,
-    "CH:zone20": 20, "CH:zone:20": 20,
-    "LI:urban": 50, "LI:rural": 80, "LI:zone30": 30, "LI:zone:30": 30,
+    "DE:urban": 50, "DE:rural": 100, "DE:motorway": NO_LIMIT, "DE:bicycle_road": 30,
+    "AT:urban": 50, "AT:rural": 100, "AT:trunk": 100, "AT:motorway": 130,
+    "CH:urban": 50, "CH:rural": 80, "CH:trunk": 100, "CH:motorway": 120,
+    "LI:urban": 50, "LI:rural": 80,
+    "BE:urban": 50, "BE-VLG:rural": 70, "BE-WAL:rural": 90, "BE:motorway": 120,
+    "BG:urban": 50, "BG:rural": 90, "BG:motorway": 140,
+    "BY:urban": 60, "BY:rural": 90, "BY:motorway": 120,
+    "CZ:urban": 50, "CZ:rural": 90, "CZ:motorway": 130,
+    "DK:urban": 50, "DK:rural": 80, "DK:motorway": 130,
+    "EE:urban": 50, "EE:rural": 90,
+    "ES:urban": 50, "ES:rural": 90, "ES:motorway": 120,
+    "FI:urban": 50, "FI:rural": 80,
+    "FR:urban": 50, "FR:rural": 80, "FR:motorway": 130,
+    "GB:nsl_restricted": (30, True), "GB:nsl_single": (60, True), "GB:nsl_dual": (70, True), "GB:motorway": (70, True),
+    "GR:urban": 50, "GR:rural": 90, "GR:motorway": 130,
+    "HR:urban": 50, "HR:rural": 90, "HR:motorway": 130,
+    "HU:urban": 50, "HU:rural": 90, "HU:motorway": 130,
+    "IE:urban": 50, "IE:rural": 80, "IE:national": 100, "IE:motorway": 120,
+    "IT:urban": 50, "IT:rural": 90, "IT:trunk": 110, "IT:motorway": 130,
+    "LT:urban": 50, "LT:rural": 90,
+    "LU:urban": 50, "LU:rural": 90, "LU:motorway": 130,
+    "LV:urban": 50, "LV:rural": 90,
+    "NL:urban": 50, "NL:rural": 80, "NL:trunk": 100,
+    "NO:urban": 50, "NO:rural": 80,
+    "PL:urban": 50, "PL:rural": 90, "PL:expressway": 120, "PL:motorway": 140,
+    "PT:urban": 50, "PT:rural": 90, "PT:motorway": 120,
+    "RO:urban": 50, "RO:rural": 90, "RO:motorway": 130,
+    "RS:urban": 50, "RS:rural": 80, "RS:motorway": 130,
+    "RU:urban": 60, "RU:rural": 90, "RU:motorway": 110,
+    "SE:urban": 50, "SE:rural": 70,
+    "SI:urban": 50, "SI:rural": 90, "SI:motorway": 130,
+    "SK:urban": 50, "SK:rural": 90, "SK:motorway": 130,
+    "TR:urban": 50, "TR:rural": 90, "TR:motorway": 120,
+    "UA:urban": 50, "UA:rural": 90, "UA:motorway": 130,
+    "AU:urban": 50, "AU:rural": 100,
+    "NZ:urban": 50, "NZ:rural": 100,
+    "JP:nsl": 60, "JP:motorway": 100,
+    "ZA:urban": 60, "ZA:rural": 100, "ZA:motorway": 120,
 }
+ZONE = re.compile(r"[A-Z]{2}(-[A-Z0-9]{1,3})?:zone:?(\d{1,2})")
 
 
 def parse_speed(value):
@@ -54,7 +90,14 @@ def parse_speed(value):
         return None
     value = value.strip()
     if value in IMPLICIT:
-        return IMPLICIT[value], False
+        implicit = IMPLICIT[value]
+        if isinstance(implicit, tuple):
+            return round(implicit[0] * 1.609344), True
+        return implicit, False
+    zone = ZONE.fullmatch(value)
+    if zone:
+        number = int(zone.group(2))
+        return (number, False) if 5 <= number <= 80 else None
     if value == "none":
         return NO_LIMIT, False
     match = re.fullmatch(r"(\d{1,3})(\s*mph)?", value)
@@ -148,13 +191,22 @@ def run(cmd):
     subprocess.run(cmd, check=True)
 
 
-def filtered_features(country, pbf, work):
+FILTER = ["w/maxspeed", "w/maxspeed:forward", "w/maxspeed:backward", "w/overtaking", "w/overtaking:forward",
+          "w/overtaking:backward", "n/highway=stop,give_way,crossing", "n/railway=level_crossing"]
+
+
+def filtered_features(country, pbfs, work):
     os.makedirs(work, exist_ok=True)
-    filtered = os.path.join(work, f"{country}-filtered.osm.pbf")
     lines = os.path.join(work, f"{country}.geojsonseq")
-    run(["osmium", "tags-filter", "--overwrite", "-o", filtered, pbf,
-         "w/maxspeed", "w/maxspeed:forward", "w/maxspeed:backward", "w/overtaking", "w/overtaking:forward",
-         "w/overtaking:backward", "n/highway=stop,give_way,crossing", "n/railway=level_crossing"])
+    parts = []
+    for number, pbf in enumerate(pbfs):
+        part = os.path.join(work, f"{country}-filtered-{number}.osm.pbf")
+        run(["osmium", "tags-filter", "--overwrite", "-o", part, pbf, *FILTER])
+        parts.append(part)
+    filtered = parts[0]
+    if len(parts) > 1:
+        filtered = os.path.join(work, f"{country}-filtered.osm.pbf")
+        run(["osmium", "merge", "--overwrite", "-o", filtered, *parts])
     run(["osmium", "export", "--overwrite", "-f", "geojsonseq", "--geometry-types=linestring,point", "-o", lines, filtered])
     with open(lines, encoding="utf-8") as handle:
         for line in handle:
@@ -163,14 +215,39 @@ def filtered_features(country, pbf, work):
                 yield json.loads(line)
 
 
-def build(country, pbf, data_date, out_dir="dist", work="work"):
+def build(country, pbfs, data_date, out_dir="dist", work="work"):
+    # Each piece and sign is written into its cell's bytes at once, so Germany fits in memory.
     cells = {}
     stats = {"roads": 0, "pieces": 0, "signs": 0, "skipped": 0}
 
     def cell(lon, lat):
-        return cells.setdefault(cell_of(lon, lat), {"roads": [], "signs": []})
+        key = cell_of(lon, lat)
+        entry = cells.get(key)
+        if entry is None:
+            entry = cells[key] = {"key": key, "roads": bytearray(), "road_count": 0, "signs": bytearray(), "sign_count": 0}
+        return entry
 
-    for feature in filtered_features(country, pbf, work):
+    def add_road(target, direction, speed, overtaking, road_class, piece):
+        origin_lat, origin_lon = target["key"][0] * CELL_E5, target["key"][1] * CELL_E5
+        kmh, mph = speed if speed else (255, False)   # 255: no limit known, the piece carries a ban only
+        flags = direction | (4 if mph else 0) | (8 if overtaking else 0) | (road_class << 4)
+        body = target["roads"]
+        body += bytes([kmh, flags]) + varint(len(piece))
+        last_lat, last_lon = origin_lat, origin_lon
+        for lon, lat in piece:
+            # The first point relative to the cell's corner (a piece may reach past its cell), then deltas.
+            lat5, lon5 = e5(lat), e5(lon)
+            body += varint(zigzag(lat5 - last_lat)) + varint(zigzag(lon5 - last_lon))
+            last_lat, last_lon = lat5, lon5
+        target["road_count"] += 1
+
+    def add_sign(kind, lon, lat):
+        target = cell(lon, lat)
+        origin_lat, origin_lon = target["key"][0] * CELL_E5, target["key"][1] * CELL_E5
+        target["signs"] += bytes([kind]) + varint(zigzag(e5(lat) - origin_lat)) + varint(zigzag(e5(lon) - origin_lon))
+        target["sign_count"] += 1
+
+    for feature in filtered_features(country, pbfs, work):
         tags = feature.get("properties") or {}
         geometry = feature.get("geometry") or {}
         if geometry.get("type") == "Point":
@@ -187,7 +264,7 @@ def build(country, pbf, data_date, out_dir="dist", work="work"):
                 kind = SIGN_ZEBRA
             if kind is None:
                 continue
-            cell(lon, lat)["signs"].append((kind, lon, lat))
+            add_sign(kind, lon, lat)
             stats["signs"] += 1
             continue
         if geometry.get("type") != "LineString":
@@ -227,31 +304,15 @@ def build(country, pbf, data_date, out_dir="dist", work="work"):
             mid = piece[len(piece) // 2]
             target = cell(mid[0], mid[1])
             for direction, speed, overtaking in entries:
-                target["roads"].append((direction, speed, overtaking, road_class, piece))
+                add_road(target, direction, speed, overtaking, road_class, piece)
                 stats["pieces"] += 1
 
     os.makedirs(out_dir, exist_ok=True)
     keys = sorted(cells)
     blocks = []
     for key in keys:
-        origin_lat, origin_lon = key[0] * CELL_E5, key[1] * CELL_E5
-        body = bytearray(varint(len(cells[key]["roads"])))
-        for direction, speed, overtaking, road_class, piece in cells[key]["roads"]:
-            kmh, mph = speed if speed else (255, False)   # 255: no limit known, the piece carries a ban only
-            flags = direction | (4 if mph else 0) | (8 if overtaking else 0) | (road_class << 4)
-            body += bytes([kmh, flags]) + varint(len(piece))
-            last_lat, last_lon = None, None
-            for lon, lat in piece:
-                lat5, lon5 = e5(lat), e5(lon)
-                if last_lat is None:
-                    # Relative to the cell's corner; a piece may reach past its cell.
-                    body += varint(zigzag(lat5 - origin_lat)) + varint(zigzag(lon5 - origin_lon))
-                else:
-                    body += varint(zigzag(lat5 - last_lat)) + varint(zigzag(lon5 - last_lon))
-                last_lat, last_lon = lat5, lon5
-        body += varint(len(cells[key]["signs"]))
-        for kind, lon, lat in cells[key]["signs"]:
-            body += bytes([kind]) + varint(zigzag(e5(lat) - origin_lat)) + varint(zigzag(e5(lon) - origin_lon))
+        entry = cells[key]
+        body = varint(entry["road_count"]) + bytes(entry["roads"]) + varint(entry["sign_count"]) + bytes(entry["signs"])
         compressor = zlib.compressobj(9, zlib.DEFLATED, -15)
         blocks.append(compressor.compress(bytes(body)) + compressor.flush())
 
@@ -275,6 +336,6 @@ def build(country, pbf, data_date, out_dir="dist", work="work"):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 4:
+    if len(sys.argv) < 4 or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", sys.argv[2]):
         sys.exit(__doc__)
-    build(sys.argv[1].upper(), sys.argv[2], sys.argv[3])
+    build(sys.argv[1].upper(), sys.argv[3:], sys.argv[2])

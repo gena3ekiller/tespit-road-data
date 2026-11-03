@@ -3,13 +3,19 @@
 Road data for the Tespit app, built from OpenStreetMap: speed limits, overtaking bans and road signs
 (stop, give way, level crossings, zebra crossings). Separate from the speed camera data (`tespit-map-data`).
 
-- **Data:** each release (tag `data-YYYY-MM-DD`) carries one file per country, `roads-XX-v1.bin`.
-  ODbL 1.0, © OpenStreetMap contributors (see `DATA-LICENSE.md`). Countries: Switzerland, Liechtenstein,
-  Austria, Germany.
-- **`manifest.json`:** per country the release tag, file, size, SHA-256 and data date, a global `enabled`
-  switch and `disabledCountries`. The app only reads it and carries no URLs of its own beyond this repository.
-- **Scripts:** `build_pack.py` (osmium filter and export, simplify, cut, pack), `read_pack.py` (reads a pack
-  back like the apps), `publish.py` (release and manifest), `update.py` (download, build, check, publish).
+- **Data:** each release (tag `data-YYYY-MM-DD`) carries one file per pack, `roads-XX-v1.bin`: the whole world,
+  197 packs for 214 countries from the Geofabrik extracts (`countries.py`; a few packs cover several countries,
+  such as the Gulf states or Malaysia, Singapore and Brunei). ODbL 1.0, © OpenStreetMap contributors
+  (see `DATA-LICENSE.md`).
+- **`manifest.json`:** per pack the release tag, file, size, SHA-256, data date, continent and the countries it
+  covers, a global `enabled` switch and `disabledCountries` (pack ids). The app only reads it and carries no URLs
+  of its own beyond this repository. The user picks the countries in the app; nothing loads by itself.
+- **Build:** `.github/workflows/build.yml` builds every pack on GitHub's machines, monthly on the 7th or by hand
+  (Actions → Build road packs, optionally only some pack ids), and publishes the changed ones as one release.
+  A pack that comes out empty, or more than a third smaller than the published one, is not published.
+- **Scripts:** `countries.py` (the packs, their continents and extracts), `build_pack.py` (osmium filter and
+  export, simplify, cut, pack), `read_pack.py` (reads a pack back like the apps), `publish.py` (release and
+  manifest, emergency switch), `update.py` (single packs on a Mac).
 - **What is not in it:** limits that change with time or weather (`maxspeed:conditional`, variable signs),
   walking pace and unknown values. An OSM limit can be wrong or missing; the sign on the road applies.
 
