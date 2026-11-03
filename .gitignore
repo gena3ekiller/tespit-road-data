@@ -1,0 +1,8 @@
+# OSM extracts and intermediate files are downloaded and rebuilt, never checked in.
+raw/
+work/
+dist/
+logs/
+__pycache__/
+*.log
+.DS_Store
