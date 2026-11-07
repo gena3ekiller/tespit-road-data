@@ -9,66 +9,66 @@
    "countries": [
     "AD"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-AD-v1.bin",
-   "sha256": "5dacc39c587a757bd87131c2e68d05125a47d8ffec6e6f1b511a03fa9884609e",
+   "sha256": "2ae95b050575c2418a47a7e2e5ddb72960ff84027f161b44b55943842ee23e25",
    "size": 17479,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "AF": {
    "continent": "asia",
    "countries": [
     "AF"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-AF-v1.bin",
-   "sha256": "121dadaac47d20b7b60d0ec19a908394f0ebbfd3fc5549beb954464f80f69350",
+   "sha256": "5ccef4823a2312d24605c54501524de77f3fe2d4ec84374270381667b8a195ae",
    "size": 1436370,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "AL": {
    "continent": "europe",
    "countries": [
     "AL"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-AL-v1.bin",
-   "sha256": "952119c44414281f51a7ea5e893d212a38b6b7dd065d4a36e8d3c010b7cfe9aa",
-   "size": 349093,
-   "tag": "data-2026-11-03"
+   "sha256": "dcb4c72ceb83e53e601eeb641ab515a91efdb3ab67e46b0fedb871a03411cb65",
+   "size": 348953,
+   "tag": "data-2026-11-07"
   },
   "AM": {
    "continent": "asia",
    "countries": [
     "AM"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-AM-v1.bin",
-   "sha256": "1912a7249178152b1afac10d8046501bc086d0a88bb1aa87c9760de66b9833d6",
-   "size": 183354,
-   "tag": "data-2026-11-03"
+   "sha256": "95c4f09824e6e99bca8946a91724f0c83c51139f91d8af1cc4fb61675f113f72",
+   "size": 183376,
+   "tag": "data-2026-11-07"
   },
   "AO": {
    "continent": "africa",
    "countries": [
     "AO"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-AO-v1.bin",
-   "sha256": "41b04436f3301e1ccd1b1fa67c7f258576e1ece11d6484ad8b4b0403ad09ad2e",
-   "size": 338731,
-   "tag": "data-2026-11-03"
+   "sha256": "815e38b75d4ba683cf73ba6751fa565893fe122553f006edc60990b45792e0ad",
+   "size": 338734,
+   "tag": "data-2026-11-07"
   },
   "AR": {
    "continent": "south-america",
    "countries": [
     "AR"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-AR-v1.bin",
-   "sha256": "6f96c06f77cd11bf8eb82f044b55f2f587c3d9f1d468849bba1d0297797fb52c",
-   "size": 3741279,
-   "tag": "data-2026-11-03"
+   "sha256": "69ed0f0038c6a76c77f412159f9da1a679892ad5b36fcd5813bc40a0883695df",
+   "size": 3741727,
+   "tag": "data-2026-11-07"
   },
   "AS": {
    "continent": "oceania",
@@ -77,297 +77,297 @@
     "GU",
     "MP"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-AS-v1.bin",
-   "sha256": "7d8515a87db4d964162d9084ab69331f66562dd2f1c94561b137b74424e2ce58",
+   "sha256": "a9fbe960b8d58ccfa18d045ecbce8dea28dae1d70a0bdea87ca58f6d6afc8aa8",
    "size": 4085,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "AT": {
    "continent": "europe",
    "countries": [
     "AT"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-AT-v1.bin",
-   "sha256": "edcacde7e5e5b01e503f2c9075c320e8c0ed4b33dcd0174e3cc8ed329d436617",
-   "size": 3687420,
-   "tag": "data-2026-11-03"
+   "sha256": "6f31fb81e9231b7e89cf278ae906b57cbe637b7b64e4539083a735e284d48183",
+   "size": 3688049,
+   "tag": "data-2026-11-07"
   },
   "AU": {
    "continent": "oceania",
    "countries": [
     "AU"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-AU-v1.bin",
-   "sha256": "c79ad29b53b4be8947a9d6c036a961df73caad417922503c57416df41c772396",
-   "size": 11002703,
-   "tag": "data-2026-11-03"
+   "sha256": "d602cf143066d9dd38bcaf184363ccdb7ea8e468ccfdbb1176c3a6462ee69e1a",
+   "size": 11007346,
+   "tag": "data-2026-11-07"
   },
   "AZ": {
    "continent": "asia",
    "countries": [
     "AZ"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-AZ-v1.bin",
-   "sha256": "ecccd8d1a9a07029fd58178f17e0abe3bba144fd0502d91a33afd07a9497087f",
-   "size": 1690634,
-   "tag": "data-2026-11-03"
+   "sha256": "c6bcd649754da52502d231272d0084161ff5df08067842fb8b1e0c8678dcd600",
+   "size": 1692622,
+   "tag": "data-2026-11-07"
   },
   "BA": {
    "continent": "europe",
    "countries": [
     "BA"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-BA-v1.bin",
-   "sha256": "28f62c2934889eacbfe0b3438844ec0a754ba788814628590862005a600cae39",
-   "size": 345065,
-   "tag": "data-2026-11-03"
+   "sha256": "dcdcc24e5917d7687c4eaa1c79ecd355d62623ba7077b680e85e63eec2a5682c",
+   "size": 345095,
+   "tag": "data-2026-11-07"
   },
   "BD": {
    "continent": "asia",
    "countries": [
     "BD"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-BD-v1.bin",
-   "sha256": "9e9e52a1f1d96eec81a99ebfd9c79216ee2547ae8b34b4714f7b86c464ef16fc",
-   "size": 224927,
-   "tag": "data-2026-11-03"
+   "sha256": "63a0b84d241a2462ac01d814ff953a16b04b7221e1cbc83fe88a3e97c0e7fe53",
+   "size": 224938,
+   "tag": "data-2026-11-07"
   },
   "BE": {
    "continent": "europe",
    "countries": [
     "BE"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-BE-v1.bin",
-   "sha256": "c54b7ad69d28d4f048b31078158cb95323fd46a7a704c743eb1b4e77295ce1bd",
-   "size": 3783841,
-   "tag": "data-2026-11-03"
+   "sha256": "f4849e8cd6ff069cf2a266406a4ae3c599cf1237225e76733120bd97cd4bd257",
+   "size": 3786255,
+   "tag": "data-2026-11-07"
   },
   "BF": {
    "continent": "africa",
    "countries": [
     "BF"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-BF-v1.bin",
-   "sha256": "e9a323e3e3f386fb3e44e1b2c5d8c89ac22d8e2397b109010a6ee1cacf3fca2f",
+   "sha256": "ae006541c3b87bc9c30f59957a96a35894a0deec3e88b5af1d259dbc0061741c",
    "size": 178789,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "BG": {
    "continent": "europe",
    "countries": [
     "BG"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-BG-v1.bin",
-   "sha256": "525f000c97ff9e11770ba4734ad224fad6faa797e2b01293d0e880f0a17ae4ea",
-   "size": 871808,
-   "tag": "data-2026-11-03"
+   "sha256": "e3c988ac4076f52d3b357b033a769a18e8abe295aa3995215c6ee2eb6d8eb25d",
+   "size": 872033,
+   "tag": "data-2026-11-07"
   },
   "BI": {
    "continent": "africa",
    "countries": [
     "BI"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-BI-v1.bin",
-   "sha256": "c04e9e3188bbb37402656e1afd13a712cbc533f31650084f10d96dbd624819a3",
+   "sha256": "7c29442f9295843ed9e9f1ce6ad26116877dc0432e36da8b74ee0c8b7000cec1",
    "size": 2112,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "BJ": {
    "continent": "africa",
    "countries": [
     "BJ"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-BJ-v1.bin",
-   "sha256": "be1e4b2101b337ca2193590028527cd37a9c6e218922489aba9819a176bb972e",
+   "sha256": "9044652e63c8a4497c98fbdd9535d21eaac70a94e548abaf43d7584f278638cb",
    "size": 24055,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "BO": {
    "continent": "south-america",
    "countries": [
     "BO"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-BO-v1.bin",
-   "sha256": "705ae42b4d4ab07002d3d9a68918b5eead6998633fd7f3cdf780687615625b05",
-   "size": 2358073,
-   "tag": "data-2026-11-03"
+   "sha256": "648eed1e436f981ca52ea5a8670320721f8800b08cc4bafe72b7ebd55a4f27e9",
+   "size": 2361035,
+   "tag": "data-2026-11-07"
   },
   "BR": {
    "continent": "south-america",
    "countries": [
     "BR"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-BR-v1.bin",
-   "sha256": "842f4d51edd4e222fac76452e64b3df56f6de8e50eddb8410cee52b88f0f0507",
-   "size": 11296328,
-   "tag": "data-2026-11-03"
+   "sha256": "6639b4031396bf8091b35de36f38b75ae3849835482ab082ba974a5706a1038e",
+   "size": 11301663,
+   "tag": "data-2026-11-07"
   },
   "BS": {
    "continent": "north-america",
    "countries": [
     "BS"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-BS-v1.bin",
-   "sha256": "d5b09aff67ab968a92f27eba61f3c0e9ca690274f5eb5dbfa327fb06a255002c",
-   "size": 20840,
-   "tag": "data-2026-11-03"
+   "sha256": "9a5073f192eb380a0e68a9aa85eeef54d990e47cdbe62d4d25711b7514449e7f",
+   "size": 20860,
+   "tag": "data-2026-11-07"
   },
   "BT": {
    "continent": "asia",
    "countries": [
     "BT"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-BT-v1.bin",
-   "sha256": "6ea857ddd5e8da5b5810e5d2b75c98b76cab84ac7f562149ef236eda2f020873",
+   "sha256": "7779cc5b79b58172fbb99d7ab885785b6b81d97346ad279ad164fba907d5bcc7",
    "size": 34188,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "BW": {
    "continent": "africa",
    "countries": [
     "BW"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-BW-v1.bin",
-   "sha256": "f74a278ba30acdada14631efb621dcdc9bdeacf75faff9436b80ccd5c8458c2a",
+   "sha256": "59c8450c3bee75a3f5b98112c720b383ef3e34180a376b8150e6e3522db64bb5",
    "size": 137854,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "BY": {
    "continent": "europe",
    "countries": [
     "BY"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-BY-v1.bin",
-   "sha256": "5f85b8ec5c9eb5a4e74c536547f284c5b78a6cc1bc5534b24a9a1fc43dbe9d28",
-   "size": 1748573,
-   "tag": "data-2026-11-03"
+   "sha256": "51ff9bc4bd007bbfdf7a4e12d797de034570509891e7b64f1bf681b26b2d0426",
+   "size": 1749030,
+   "tag": "data-2026-11-07"
   },
   "BZ": {
    "continent": "north-america",
    "countries": [
     "BZ"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-BZ-v1.bin",
-   "sha256": "f60bbcbe0d0d616df37ca75a57c9aab1e7c7069368f778f64a2ebbcf3769827a",
-   "size": 107754,
-   "tag": "data-2026-11-03"
+   "sha256": "623b64d36a8d28d6976e5db3e2b9f539f2d5998868a21fc19f031fe72f29f3af",
+   "size": 107829,
+   "tag": "data-2026-11-07"
   },
   "CA": {
    "continent": "north-america",
    "countries": [
     "CA"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-CA-v1.bin",
-   "sha256": "8796db586713334ae3867018fdabc2495e53ca103a8ca05bd311db439c3fcd53",
-   "size": 11837824,
-   "tag": "data-2026-11-03"
+   "sha256": "ce9da22e7c7f8e7465496bb15e357c4a035ebe02f271db28f9b36fdc06c27087",
+   "size": 11859420,
+   "tag": "data-2026-11-07"
   },
   "CD": {
    "continent": "africa",
    "countries": [
     "CD"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-CD-v1.bin",
-   "sha256": "09aae05326f0e32ce8e034bdbc7d8c167926534a4bd81f9704d4e4fef699d273",
-   "size": 65818,
-   "tag": "data-2026-11-03"
+   "sha256": "5aabbe4e6abb307560ee89381391e82e0582e5f33af43970eb9829f4967d0b2d",
+   "size": 65827,
+   "tag": "data-2026-11-07"
   },
   "CF": {
    "continent": "africa",
    "countries": [
     "CF"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-CF-v1.bin",
-   "sha256": "de95b14d8f7fef0d0e9c2604f1446dca8067cae01c1fcc9510223c9901296051",
+   "sha256": "ea23e081ef330ffd705a8536d6a0a1492f0d5063e9e4e4119f94d564f70325fc",
    "size": 1484,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "CG": {
    "continent": "africa",
    "countries": [
     "CG"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-CG-v1.bin",
-   "sha256": "c8c1476ac4ffea8e184e6d676c4604b1b8c32d24886021ca3bc0d8403468c8cf",
+   "sha256": "38d81e3db5b034ad8083e22ff443217fc68c6fd2bf7eb3c4894dbe59b89a6858",
    "size": 13045,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "CH": {
    "continent": "europe",
    "countries": [
     "CH"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-CH-v1.bin",
-   "sha256": "07824f2d403269f75fc6af18dd357fba6c66b98a532dc2bd2ff43390c2077d7a",
-   "size": 2924602,
-   "tag": "data-2026-11-03"
+   "sha256": "2f736cfce64a4a49bd48326d5d5cac6fea15add166fdd4b8b43fcc29d5af4078",
+   "size": 2925658,
+   "tag": "data-2026-11-07"
   },
   "CI": {
    "continent": "africa",
    "countries": [
     "CI"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-CI-v1.bin",
-   "sha256": "8458c42d810444d5da8d9bb13b2d9edf7bc2ce8a31dae96db8b12e37d36a1887",
-   "size": 74035,
-   "tag": "data-2026-11-03"
+   "sha256": "8dfb8286425fd3c88dc91ae6260d282eb8329999b4470ccc15eb6b31138ca82b",
+   "size": 74031,
+   "tag": "data-2026-11-07"
   },
   "CK": {
    "continent": "oceania",
    "countries": [
     "CK"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-CK-v1.bin",
-   "sha256": "075760c995ddc5df8c0a97529141b73f7f7860df5e528f8e11f3629e5ca336ee",
+   "sha256": "02024781ff1369511d6f78d379828f759bf8018722b59d112cef6ea0de2040c0",
    "size": 4606,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "CL": {
    "continent": "south-america",
    "countries": [
     "CL"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-CL-v1.bin",
-   "sha256": "7f55bba7cff8c9de1c1d626b726374721f7f75b7f5ba5da9792472a0e265945b",
-   "size": 2407846,
-   "tag": "data-2026-11-03"
+   "sha256": "c6b59b08f7fefb4a84553664477380a0d4ad3236e6ed3cb1290d22c84a002d38",
+   "size": 2408477,
+   "tag": "data-2026-11-07"
   },
   "CM": {
    "continent": "africa",
    "countries": [
     "CM"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-CM-v1.bin",
-   "sha256": "e417ede329049b811b0fa302239113f44e98dc1d539989e27ca5e618fbb04384",
+   "sha256": "d7dd9c6d23adc02d446038b2f10ce489b2ac433838669c1feb9f06686e02971b",
    "size": 27526,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "CN": {
    "continent": "asia",
@@ -376,110 +376,110 @@
     "HK",
     "MO"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-CN-v1.bin",
-   "sha256": "65b49d33e28a93b858c0ab0aa99c73623bf3d57087537a355fe34d0023a6f17f",
-   "size": 4763356,
-   "tag": "data-2026-11-03"
+   "sha256": "54d111482c19209146f6d76cf199bae9b51d6286ab6492ea45ec61a56309f099",
+   "size": 4763969,
+   "tag": "data-2026-11-07"
   },
   "CO": {
    "continent": "south-america",
    "countries": [
     "CO"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-CO-v1.bin",
-   "sha256": "a9886d5a4f976fb5b1610e1f1c0db8b91d62a5254d561d41a398ea9551ea1c82",
-   "size": 1080244,
-   "tag": "data-2026-11-03"
+   "sha256": "2dc4df2896fc2225f02af01cc4a452abfd6a7669e4381e3a5d048b96f87fe870",
+   "size": 1080542,
+   "tag": "data-2026-11-07"
   },
   "CR": {
    "continent": "north-america",
    "countries": [
     "CR"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-CR-v1.bin",
-   "sha256": "a187ce790d9d5f13497a983b0a08de2cec97cc728d8c4cb0392f7f2f16c7ef9a",
-   "size": 338818,
-   "tag": "data-2026-11-03"
+   "sha256": "982f22b49e59960909ab05f3d9e93383d4f5ae4ec4be04789e11399a5a20ce6d",
+   "size": 338934,
+   "tag": "data-2026-11-07"
   },
   "CU": {
    "continent": "north-america",
    "countries": [
     "CU"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-CU-v1.bin",
-   "sha256": "bee231c18cf995207025a8258c29ab525903d25aa870aff26e7da1bbf6156e51",
+   "sha256": "8e72f86095d115785a0516be543ab676f30e81cddd447d8f087d0b620cd4c372",
    "size": 550612,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "CV": {
    "continent": "africa",
    "countries": [
     "CV"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-CV-v1.bin",
-   "sha256": "5b622ce99ae2315deb15bafd08cb44d9fbe0745bb51ca7320a3272d693c6104e",
+   "sha256": "f2a96e6e591f5bd6a5b1ae71b0d525b77dcdb05bdcd12c43a04d202464f8e8e5",
    "size": 4680,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "CY": {
    "continent": "europe",
    "countries": [
     "CY"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-CY-v1.bin",
-   "sha256": "3fae96d56d1f2a2822f608ba785a952f8685d7b576bd48fad4230a658ffdd528",
-   "size": 253805,
-   "tag": "data-2026-11-03"
+   "sha256": "c6443d343a12383aa2604b7f95c9ae50ded07ed2c9cf1b16ec41ed45d2ff73e0",
+   "size": 253902,
+   "tag": "data-2026-11-07"
   },
   "CZ": {
    "continent": "europe",
    "countries": [
     "CZ"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-CZ-v1.bin",
-   "sha256": "1b3a7a13bc09d18816997fc666b1a01e24742c769149c07ef019830ea4680817",
-   "size": 2791396,
-   "tag": "data-2026-11-03"
+   "sha256": "44ca52620ea165e4f92ff3f860768067365a9e97054a0f0dbb3c855e3d72af2a",
+   "size": 2792058,
+   "tag": "data-2026-11-07"
   },
   "DE": {
    "continent": "europe",
    "countries": [
     "DE"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-DE-v1.bin",
-   "sha256": "1aed61027cffefea01b482dec66460974571287ec5f68d1f6fba6eb6fbeefa1e",
-   "size": 30532515,
-   "tag": "data-2026-11-03"
+   "sha256": "ce27760dc6b50f2bba81742d973440f7277a8c294b4abe929aae02672b4588c2",
+   "size": 30549344,
+   "tag": "data-2026-11-07"
   },
   "DJ": {
    "continent": "africa",
    "countries": [
     "DJ"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-DJ-v1.bin",
-   "sha256": "601aa4af574a3bb9479a1d6fb866f1e6029101685383258a9137e51840616c14",
+   "sha256": "9fdb7dc6e2e439bdb4b37647ecdccc2815aae629cc01da9e119dacd754670ad7",
    "size": 2118,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "DK": {
    "continent": "europe",
    "countries": [
     "DK"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-DK-v1.bin",
-   "sha256": "e7710502b07b552bf1871621cc2cae0778bb3220a23e94b3009952cafb8c8e76",
-   "size": 2514414,
-   "tag": "data-2026-11-03"
+   "sha256": "8594f556693e46477317a9ffc7876f981652eadd056f05a26e373251befd9b02",
+   "size": 2515974,
+   "tag": "data-2026-11-07"
   },
   "DO": {
    "continent": "north-america",
@@ -487,187 +487,187 @@
     "DO",
     "HT"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-DO-v1.bin",
-   "sha256": "6c421d8b3cfcc2baf05b53f1cc22cc8da054f30a89ea422ba2b4ff2145033744",
-   "size": 100388,
-   "tag": "data-2026-11-03"
+   "sha256": "d9201d7bbe78b7614a95741646395560ca1ccd5f01f182b63e291bb5fffc8a15",
+   "size": 100424,
+   "tag": "data-2026-11-07"
   },
   "DZ": {
    "continent": "africa",
    "countries": [
     "DZ"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-DZ-v1.bin",
-   "sha256": "d60a6648dcc6509712291e9cf9cebb3cb1b6edae0ae61611510320213a96b221",
-   "size": 1202482,
-   "tag": "data-2026-11-03"
+   "sha256": "088b03dc35e3320077c503e3f668d2e7e9926156db4bda38fc17a756f651d460",
+   "size": 1202817,
+   "tag": "data-2026-11-07"
   },
   "EC": {
    "continent": "south-america",
    "countries": [
     "EC"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-EC-v1.bin",
-   "sha256": "0e556f24cf0b9d69184a6ca8933c3a39c209e2eae62ced294289900f4524bcc4",
-   "size": 655435,
-   "tag": "data-2026-11-03"
+   "sha256": "aef6d05818f0b0aded88ae07113811c5d8ad306c13617b6bf592bfcc0b2b9651",
+   "size": 656386,
+   "tag": "data-2026-11-07"
   },
   "EE": {
    "continent": "europe",
    "countries": [
     "EE"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-EE-v1.bin",
-   "sha256": "69d7305843df037c2b0586c0c3e0b61e018d568786151635e0a785d787e2d73a",
-   "size": 596555,
-   "tag": "data-2026-11-03"
+   "sha256": "f2d261043da9523096fb754af4ea411a4f9c8678833fbd383c2dcd998188f947",
+   "size": 596951,
+   "tag": "data-2026-11-07"
   },
   "EG": {
    "continent": "africa",
    "countries": [
     "EG"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-EG-v1.bin",
-   "sha256": "1a1ec86fa7ebf069f137cec13d65f45ff5202bef701ae8f42a5009cb475cacaf",
-   "size": 255683,
-   "tag": "data-2026-11-03"
+   "sha256": "22f5890737781f0f84eea198d3283a4e462e31e44947e31477fc139f22a0f9a4",
+   "size": 257516,
+   "tag": "data-2026-11-07"
   },
   "ER": {
    "continent": "africa",
    "countries": [
     "ER"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-ER-v1.bin",
-   "sha256": "5a01fea67286304d32a83a4525f922fa00332cd9699afac7b5f65989aa79dce2",
+   "sha256": "a743c0068bb7b331a17d4e1db8200bb2f89afcd283ab17211da1fbd636761f23",
    "size": 843,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "ES": {
    "continent": "europe",
    "countries": [
     "ES"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-ES-v1.bin",
-   "sha256": "a7c4f825c0e080548a75fae3aad849ccfb2e8095befc829cca3304214f6f2095",
-   "size": 8914135,
-   "tag": "data-2026-11-03"
+   "sha256": "8b11f2df77495300fa07164d0a94e589f60d3d3e05efd14e8a96a926a2c4d6af",
+   "size": 8919857,
+   "tag": "data-2026-11-07"
   },
   "ET": {
    "continent": "africa",
    "countries": [
     "ET"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-ET-v1.bin",
-   "sha256": "c5ebd8dfaf2dfa36b28cb2857133499805309c91eb4a0959c3ee0bb0f8458a90",
+   "sha256": "b9208e86bd3b558cc307debeb8fbbbb07bf5919be4bed6c65ef5ec2874b78787",
    "size": 233435,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "FI": {
    "continent": "europe",
    "countries": [
     "FI"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-FI-v1.bin",
-   "sha256": "8284bf27511de6c765e51d625acd318111ed9001fa80ea6c54d4ccc31699ff37",
-   "size": 3866010,
-   "tag": "data-2026-11-03"
+   "sha256": "55c1f81ac9fc91b364c35ed26ec0b706d2e0109493f49bfd6cf40e4dbfd4e88e",
+   "size": 3866728,
+   "tag": "data-2026-11-07"
   },
   "FJ": {
    "continent": "oceania",
    "countries": [
     "FJ"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-FJ-v1.bin",
-   "sha256": "217edb58f1face1a9636e406facacc6a208bb6758d37bf486b01eb5b7203e2dd",
+   "sha256": "6e6a64c5a3e03d176fae0da5bbc57d1ed88eeda77d03b4a5cae13c86c0f9f55b",
    "size": 36783,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "FM": {
    "continent": "oceania",
    "countries": [
     "FM"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-FM-v1.bin",
-   "sha256": "5f4c7153bc24b71d8555a2c98036039150e858adcc8281a73316b7621318ef01",
+   "sha256": "51058417951dbc74ad2baf99c20f1177a4a9a990943b83e03b776238d724dddf",
    "size": 137,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "FO": {
    "continent": "europe",
    "countries": [
     "FO"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-FO-v1.bin",
-   "sha256": "8c62a09159565ec84cd7b5db26449e12f6a6b147dc8e3f4dcf650a7ea08d4c09",
+   "sha256": "dfdc57c64ced9dae3579a199b50824aab36c242dc62c63ab7a27182bc939de0d",
    "size": 30259,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "FR": {
    "continent": "europe",
    "countries": [
     "FR"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-FR-v1.bin",
-   "sha256": "0055849794b7938adc129413f96a3ea862e9659f3b23a1814b1e5cc29f361c91",
-   "size": 29356188,
-   "tag": "data-2026-11-03"
+   "sha256": "a149e4121b09487d4361d9e12e7596bab9c4fcc0347a8e785217db5f650c5d47",
+   "size": 29404199,
+   "tag": "data-2026-11-07"
   },
   "GA": {
    "continent": "africa",
    "countries": [
     "GA"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-GA-v1.bin",
-   "sha256": "c64c17612f5667c1013883e1ea8e85279ee3dd9b2d67869443dd971d32a66f0e",
-   "size": 96195,
-   "tag": "data-2026-11-03"
+   "sha256": "c40dc6688e4ad4bd5876754825135cddcc07ea15a0d0dc61a272a3ea6d485b7a",
+   "size": 96253,
+   "tag": "data-2026-11-07"
   },
   "GB": {
    "continent": "europe",
    "countries": [
     "GB"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-GB-v1.bin",
-   "sha256": "9490425bee7085dd167c7a32d7923342e56cf51c1a819be1d2843e89bd9e5fd6",
-   "size": 16185350,
-   "tag": "data-2026-11-03"
+   "sha256": "95aee2014467edc4ee6f78d553aaab73c744ecd62cbf27bd264beb8155c3b520",
+   "size": 16195214,
+   "tag": "data-2026-11-07"
   },
   "GE": {
    "continent": "europe",
    "countries": [
     "GE"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-GE-v1.bin",
-   "sha256": "cd12917bd0631c15be6fac78414fc37a89d130e6bffa27e0342db2a45ced77b0",
-   "size": 310494,
-   "tag": "data-2026-11-03"
+   "sha256": "ba61aa089358a10e33e55708499254eb036083b273ce12befdf2894e4db527b6",
+   "size": 310654,
+   "tag": "data-2026-11-07"
   },
   "GF": {
    "continent": "south-america",
    "countries": [
     "GF"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-GF-v1.bin",
-   "sha256": "78912f35124478f9330617cf953b49b90d4b193f3b4e311635f86fc10a8f2653",
-   "size": 59032,
-   "tag": "data-2026-11-03"
+   "sha256": "3fc750cfbbf942874461bd05e55353d4b42d6a51c65880e907013b1c03dd2a37",
+   "size": 59122,
+   "tag": "data-2026-11-07"
   },
   "GG": {
    "continent": "europe",
@@ -675,165 +675,165 @@
     "GG",
     "JE"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-GG-v1.bin",
-   "sha256": "a74ba01b31012125d61209772a7ba5532611f903e4e12f4875a6a62faadfc318",
+   "sha256": "0095afab0e11075452a5677f530a52462c0004ca65aa6ca514b3c316ddf85d74",
    "size": 58928,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "GH": {
    "continent": "africa",
    "countries": [
     "GH"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-GH-v1.bin",
-   "sha256": "4ecb2cde05cda5572951b985aea82cb0b4f8ddbff55a0a2a0ca3949510bbe0c7",
-   "size": 195692,
-   "tag": "data-2026-11-03"
+   "sha256": "75052f372c251f28706efaf1f1e107a98fa5c4d6fb60a18ff3962b16e3509e91",
+   "size": 195657,
+   "tag": "data-2026-11-07"
   },
   "GL": {
    "continent": "north-america",
    "countries": [
     "GL"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-GL-v1.bin",
-   "sha256": "a72759c84e33789c9f05f1dd9d2c8bfce9814b55eecca8dcbb356ab5b306a7f9",
+   "sha256": "7fc8e7caa3f0028d05316c15de3fcabfd5a8f6d261c31b24cfb72b3a8e5add53",
    "size": 3406,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "GN": {
    "continent": "africa",
    "countries": [
     "GN"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-GN-v1.bin",
-   "sha256": "449581f38e4cfdb7b6c8f98ea76e97d5c500d8ce3c0506bbb79543c84c9a6dfb",
+   "sha256": "ebed9a9611e561e803fdd4e6ae3f62c8ef91bdd1c2a478b21c3bb5bc29f68e1b",
    "size": 52737,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "GP": {
    "continent": "north-america",
    "countries": [
     "GP"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-GP-v1.bin",
-   "sha256": "72d343188e3bbeadafa5ebac348ac97cf8e53776c88e76646270204e4185c7ac",
-   "size": 66050,
-   "tag": "data-2026-11-03"
+   "sha256": "27a3e310776f54c605fa9467b53e701ece5452fc8e53244463fc969d6ce9896b",
+   "size": 66101,
+   "tag": "data-2026-11-07"
   },
   "GQ": {
    "continent": "africa",
    "countries": [
     "GQ"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-GQ-v1.bin",
-   "sha256": "3ad4794aff2390bf7a5bdd6bb42290079fbd116424acbb36caf3fb7fbac92c8b",
+   "sha256": "74864a281ff722614718601ea2860138a06b63fa80ce8e207729e4936df548af",
    "size": 2465,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "GR": {
    "continent": "europe",
    "countries": [
     "GR"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-GR-v1.bin",
-   "sha256": "c6fd348ce870a679be5a0010635c21dde35b6fb9425f847969ab00858ea02942",
-   "size": 1915742,
-   "tag": "data-2026-11-03"
+   "sha256": "5877cefa434b98c8db3b9f93d0b15294628105ee30d02195b8ae48372d6e129f",
+   "size": 1915884,
+   "tag": "data-2026-11-07"
   },
   "GT": {
    "continent": "north-america",
    "countries": [
     "GT"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-GT-v1.bin",
-   "sha256": "c2fd9812b37040dda9d84033ef706c1d34726fe5a23b09ca65a26a6bf064e325",
-   "size": 159713,
-   "tag": "data-2026-11-03"
+   "sha256": "b53b4cddc2542cb295ccafeaa0391262b43c73d49491d2f128af3d5d981e6ec8",
+   "size": 159721,
+   "tag": "data-2026-11-07"
   },
   "GW": {
    "continent": "africa",
    "countries": [
     "GW"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-GW-v1.bin",
-   "sha256": "f78cfdbef4615eadd9b8a3a1a589d7d6b938d68a83dbe157da42c1b45ec98767",
+   "sha256": "a0e234d364af73c730944217e1063d433eaed9e427a84f501948328e0b2ce0e7",
    "size": 11330,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "GY": {
    "continent": "south-america",
    "countries": [
     "GY"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-GY-v1.bin",
-   "sha256": "75f2e97eca6abbd35945ac42f27e50012d963e177dd32b15bc04e03d0e11b0f3",
+   "sha256": "8f1a811a8545fbda039c634c8e6be81cc1a9b05f28f143f755edfe4f059f7671",
    "size": 11897,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "HN": {
    "continent": "north-america",
    "countries": [
     "HN"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-HN-v1.bin",
-   "sha256": "68ec2ed08b5d884836937a7f2591613ff075c8d87cabe5536edb9871125597fb",
+   "sha256": "936c436456f6a18f13c5c37c60ea34fea0f161d2d8ab0b01553ae8b6ca222282",
    "size": 126568,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "HR": {
    "continent": "europe",
    "countries": [
     "HR"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-HR-v1.bin",
-   "sha256": "87b5c2def6dfdac528ce6779911bedf945a007f9233cdffd8e4374e99840b982",
-   "size": 1052709,
-   "tag": "data-2026-11-03"
+   "sha256": "3257e035aba39e9ed01581429fe2af3d12b5b8280d46c1e6d75019539a7503e1",
+   "size": 1053915,
+   "tag": "data-2026-11-07"
   },
   "HU": {
    "continent": "europe",
    "countries": [
     "HU"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-HU-v1.bin",
-   "sha256": "63deb38dec5f7ea9ee966a5ab934660e99ff78cd6b0ea89107975c2fff97696c",
-   "size": 1871390,
-   "tag": "data-2026-11-03"
+   "sha256": "c1f61b3e32a8e77d20d11164013cee5a2a76ace6451afe9def09c0c4ffda6c4a",
+   "size": 1871879,
+   "tag": "data-2026-11-07"
   },
   "ID": {
    "continent": "asia",
    "countries": [
     "ID"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-ID-v1.bin",
-   "sha256": "a2a3c8d7e05601d1935da28bc70ee025f5de430934295667735da31e949da9b9",
-   "size": 736870,
-   "tag": "data-2026-11-03"
+   "sha256": "f016edd18cfd8408d669623222d2fea7f54e3f2a2130eb54c1a561fc55d773ab",
+   "size": 737362,
+   "tag": "data-2026-11-07"
   },
   "IE": {
    "continent": "europe",
    "countries": [
     "IE"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-IE-v1.bin",
-   "sha256": "737e9d05f82d5a0c3552d6a111d54700d3eb838280e0178619f4aa5c45d7d872",
-   "size": 3434525,
-   "tag": "data-2026-11-03"
+   "sha256": "1294b3dcf1daf53c5598673ff58ed20de0a812bfca4166d9d7e46067e57a5b50",
+   "size": 3434827,
+   "tag": "data-2026-11-07"
   },
   "IL": {
    "continent": "asia",
@@ -841,66 +841,66 @@
     "IL",
     "PS"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-IL-v1.bin",
-   "sha256": "b9a765dfc7ed4ad6854f8855193a6caa38026978e9186bb9605aae84fb83eb4d",
-   "size": 572286,
-   "tag": "data-2026-11-03"
+   "sha256": "06bbf0c855f19c9f869d2c340e7ac49d74ecba4348b14bdec8b4570d723f23f2",
+   "size": 572793,
+   "tag": "data-2026-11-07"
   },
   "IM": {
    "continent": "europe",
    "countries": [
     "IM"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-IM-v1.bin",
-   "sha256": "628f4153c3fbb42524885b9910a8debdb650f16906cc0f6f8b8c665d151adeb7",
-   "size": 51069,
-   "tag": "data-2026-11-03"
+   "sha256": "6977131be7cb18ab807807abbbd2d82e14f476696a23d77ebd67dc210baae60d",
+   "size": 51085,
+   "tag": "data-2026-11-07"
   },
   "IN": {
    "continent": "asia",
    "countries": [
     "IN"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-IN-v1.bin",
-   "sha256": "00b31566d71d0f34253e559461e8291ab301ae359fcb7623083c268e70e4359a",
-   "size": 3235283,
-   "tag": "data-2026-11-03"
+   "sha256": "dbae80fec19b90878cd9b1017bff50181114ba9d1f4dbcfe7802e4d89cacf47d",
+   "size": 3235810,
+   "tag": "data-2026-11-07"
   },
   "IQ": {
    "continent": "asia",
    "countries": [
     "IQ"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-IQ-v1.bin",
-   "sha256": "706a85a5bbd005824f08c30959e61af2f2595d258d1cd80e7b2d607d727312bf",
-   "size": 405845,
-   "tag": "data-2026-11-03"
+   "sha256": "ee426ff410af09e63cd1b1f3effd89fa980d73cec683098767e8667f553f5664",
+   "size": 405732,
+   "tag": "data-2026-11-07"
   },
   "IR": {
    "continent": "asia",
    "countries": [
     "IR"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-IR-v1.bin",
-   "sha256": "79209252f78b336a5baeab3e8ca7870874321434e967717879d7bdc5abc3666b",
-   "size": 5931551,
-   "tag": "data-2026-11-03"
+   "sha256": "065778ca114ccc1d626f229f318cf5b308ca7be9cb7a388083e20cdefc214d51",
+   "size": 5931700,
+   "tag": "data-2026-11-07"
   },
   "IS": {
    "continent": "europe",
    "countries": [
     "IS"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-IS-v1.bin",
-   "sha256": "1aa4492d943c6144397a93944c6f2b3dca95e1cc91b58b4c38e131692965a9fe",
-   "size": 501192,
-   "tag": "data-2026-11-03"
+   "sha256": "d371c9aa9266333d8c6ba75ff45cfc37cdd6dc1d3a381a5c5b07ac69e9675880",
+   "size": 501441,
+   "tag": "data-2026-11-07"
   },
   "IT": {
    "continent": "europe",
@@ -909,429 +909,429 @@
     "SM",
     "VA"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-IT-v1.bin",
-   "sha256": "d5dfcc9e29db9dcd130e6f2df6d46fc5524f5bdf1185823b634b148b15d581bb",
-   "size": 9909065,
-   "tag": "data-2026-11-03"
+   "sha256": "27031d3242bec3fb60147da42fd3d98189bd655db0577f6c9adc3f46fbb0f9d1",
+   "size": 9911505,
+   "tag": "data-2026-11-07"
   },
   "JM": {
    "continent": "north-america",
    "countries": [
     "JM"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-JM-v1.bin",
-   "sha256": "55023040e762d7bbe7f504cbbf7310af15bb4c22aec28aa0b249133ce05b88d6",
-   "size": 123633,
-   "tag": "data-2026-11-03"
+   "sha256": "fbc1e562b478c5a705964746005ddc06343b36d79ba8c2c6ea0bfba6b14348b4",
+   "size": 123620,
+   "tag": "data-2026-11-07"
   },
   "JO": {
    "continent": "asia",
    "countries": [
     "JO"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-JO-v1.bin",
-   "sha256": "f01ad819e9814ef9aa7ab30af22856d5205e4a5974d4a58cd9636ead82f36f15",
-   "size": 54647,
-   "tag": "data-2026-11-03"
+   "sha256": "cc5df48787ab7976f628bfd89458d9ff73bc1a3e18ea06b8e7cf164d22518fdb",
+   "size": 54671,
+   "tag": "data-2026-11-07"
   },
   "JP": {
    "continent": "asia",
    "countries": [
     "JP"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-JP-v1.bin",
-   "sha256": "9d780bfd303da4871d617329476aa248eb19d0b9b6b151ca63233d078da6e258",
-   "size": 5238197,
-   "tag": "data-2026-11-03"
+   "sha256": "a11bf01e6899bce66beae2ff321d30fbc6b057a4828c599d966dbbc72d2754fb",
+   "size": 5240192,
+   "tag": "data-2026-11-07"
   },
   "KE": {
    "continent": "africa",
    "countries": [
     "KE"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-KE-v1.bin",
-   "sha256": "712874f142b2a128f4b78d448cfb21ec377f9a3c42730c589cf1454dc6f823c5",
-   "size": 200291,
-   "tag": "data-2026-11-03"
+   "sha256": "e12f6a7ca9c977c2b3a6969dd186a85fc95535cd45513e6c7b207868681d04bc",
+   "size": 200286,
+   "tag": "data-2026-11-07"
   },
   "KG": {
    "continent": "asia",
    "countries": [
     "KG"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-KG-v1.bin",
-   "sha256": "083900bfe03efbc9f5861c285655e040e382c3bf13d6f19f66f71fa12fb41a8a",
-   "size": 179578,
-   "tag": "data-2026-11-03"
+   "sha256": "1794cea32d48265cdbaa19658dbf7c1ca268c235d5106fb9d16d3b298688bf6c",
+   "size": 179901,
+   "tag": "data-2026-11-07"
   },
   "KH": {
    "continent": "asia",
    "countries": [
     "KH"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-KH-v1.bin",
-   "sha256": "c3d34c78c1a8ec9056a149b9c6c350cfccf8575c8ad5dd68c7cdfb51df90c0b4",
-   "size": 49747,
-   "tag": "data-2026-11-03"
+   "sha256": "b511b6702eb862bf1d37d13821d4c11d149829a5188141f5f4cab54be5c70f71",
+   "size": 49724,
+   "tag": "data-2026-11-07"
   },
   "KI": {
    "continent": "oceania",
    "countries": [
     "KI"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-KI-v1.bin",
-   "sha256": "1390024af12439620df3d398c2433b669508d8c1ac6a94ef2285eacfa000b4a8",
+   "sha256": "1551a76fbf71541ccd3b61b6d1bac31a5e2eda4575857c32191529424f63d4f6",
    "size": 6308,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "KM": {
    "continent": "africa",
    "countries": [
     "KM"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-KM-v1.bin",
-   "sha256": "79c77280964721dc14c18acad0cc72cb21dcb77442972fbec76e1ebd9e35e8db",
+   "sha256": "60e400dd78bf4a9ad2c9edc80e312c6b386408a898bd3ed429f0d0662a2f8a53",
    "size": 3075,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "KP": {
    "continent": "asia",
    "countries": [
     "KP"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-KP-v1.bin",
-   "sha256": "636b97bc0be597f41c61eaa48a4078560537c9d9e4892ac601dc3d55568be140",
+   "sha256": "d8a190369b17a167ed7c683f45b854774c01771d4ba472f4110995e036d545da",
    "size": 33433,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "KR": {
    "continent": "asia",
    "countries": [
     "KR"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-KR-v1.bin",
-   "sha256": "9306197f16b01c4a0e47003f0d1885a9c8cf265836c002c0c5b2a1c662238526",
-   "size": 1323292,
-   "tag": "data-2026-11-03"
+   "sha256": "e9f5c7844b6b4ee340dadac993d6ada71fc68b210829978f50b610d351d533b5",
+   "size": 1325420,
+   "tag": "data-2026-11-07"
   },
   "KZ": {
    "continent": "asia",
    "countries": [
     "KZ"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-KZ-v1.bin",
-   "sha256": "a963f61e60e94ff998bcb7bdd4d4216a14757efeb15bf4e6c7f145540576b94e",
-   "size": 540642,
-   "tag": "data-2026-11-03"
+   "sha256": "daf8d8d5364d599491a0d8ae95cb4ca013241e17813256192f1d0629e48f4caf",
+   "size": 541000,
+   "tag": "data-2026-11-07"
   },
   "LA": {
    "continent": "asia",
    "countries": [
     "LA"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-LA-v1.bin",
-   "sha256": "23b9e7cc04ea399f13ab8c99e95dca03a60e5304c406c18dceb0118f9adb2e81",
-   "size": 20894,
-   "tag": "data-2026-11-03"
+   "sha256": "e9caf7f6139d82cb3a997c468f65d85ceaf7da1da4ad82bde0b5114997829498",
+   "size": 20906,
+   "tag": "data-2026-11-07"
   },
   "LB": {
    "continent": "asia",
    "countries": [
     "LB"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-LB-v1.bin",
-   "sha256": "ff7f6a9d851a80d662bc1cf127829918d79061b9433febaac10ff85ed46e0bf4",
-   "size": 36301,
-   "tag": "data-2026-11-03"
+   "sha256": "648cf0dd25a8f982796b62d5c56edadcff4085908b8220b21b39ee1ae48d4a32",
+   "size": 36353,
+   "tag": "data-2026-11-07"
   },
   "LI": {
    "continent": "europe",
    "countries": [
     "LI"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-LI-v1.bin",
-   "sha256": "a85f12294ba1ea72664eb340035e95a436c54f234e5acf74f98449a781036221",
-   "size": 24484,
-   "tag": "data-2026-11-03"
+   "sha256": "24d595f416de78cf6b5c8550564e54d25d1440158fb2f51531a4813505e78067",
+   "size": 24479,
+   "tag": "data-2026-11-07"
   },
   "LK": {
    "continent": "asia",
    "countries": [
     "LK"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-LK-v1.bin",
-   "sha256": "28cd13960fa91c935323fc469eafd5ed02821648e9f3d3d2b0605426f4ba98af",
-   "size": 3111904,
-   "tag": "data-2026-11-03"
+   "sha256": "d3ffdf70b73b8993b1727692043615d07866dbc8f6a9e0b6e04738beaff36f0a",
+   "size": 3111951,
+   "tag": "data-2026-11-07"
   },
   "LR": {
    "continent": "africa",
    "countries": [
     "LR"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-LR-v1.bin",
-   "sha256": "5c273b342067aa229adb0d4f441643949c72fe52d9fc64e9f97c912e7ac024ce",
+   "sha256": "5b19080e00d8bb8d180585ad51a0f7ef5582e1bd2a4504fdbf48a57f4ebddd0a",
    "size": 8365,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "LS": {
    "continent": "africa",
    "countries": [
     "LS"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-LS-v1.bin",
-   "sha256": "22cb77bcde2e54992bb638f8081e36852eb0462ac13e040c6b0505497b641f54",
-   "size": 35189,
-   "tag": "data-2026-11-03"
+   "sha256": "21c0df6d5d2af1b00a4051e935ca2c86ef7e3395cdbd7b007901e7a03fad7dd4",
+   "size": 35239,
+   "tag": "data-2026-11-07"
   },
   "LT": {
    "continent": "europe",
    "countries": [
     "LT"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-LT-v1.bin",
-   "sha256": "fed2538d5b51ea2a908a98e65b2806079ea7078d1a069a85b97e475335408783",
-   "size": 938759,
-   "tag": "data-2026-11-03"
+   "sha256": "257d5776f91e517775f8da156e2f5bad88b0c7d9946f8bcfeb9d8d359574db08",
+   "size": 939685,
+   "tag": "data-2026-11-07"
   },
   "LU": {
    "continent": "europe",
    "countries": [
     "LU"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-LU-v1.bin",
-   "sha256": "c45dfb2cf8574fe1100243aefaa5be31d3cbc95fa96b05897496aab38dd661b5",
-   "size": 430744,
-   "tag": "data-2026-11-03"
+   "sha256": "013b08b02a46b093531535d627576cc923af2360b8581b5651cc9a6fb1e1b951",
+   "size": 430808,
+   "tag": "data-2026-11-07"
   },
   "LV": {
    "continent": "europe",
    "countries": [
     "LV"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-LV-v1.bin",
-   "sha256": "d1b598c286551a085fa5ded0a41e6bca4a1c0e3bc9ec406961741b98aa075b48",
-   "size": 576215,
-   "tag": "data-2026-11-03"
+   "sha256": "85c22feb7f8d3312d782fe1cb6a8e3d1213300f411f49b6070aedafaf925483c",
+   "size": 576307,
+   "tag": "data-2026-11-07"
   },
   "LY": {
    "continent": "africa",
    "countries": [
     "LY"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-LY-v1.bin",
-   "sha256": "b7157a2df381369bf54f73ec1e2a271309b47fad9a74a27231c92f18dc0ebb88",
-   "size": 222954,
-   "tag": "data-2026-11-03"
+   "sha256": "68b96fa14de448831b52fb8063b20a3380367a2ac01a34092d488349729ed9a1",
+   "size": 223036,
+   "tag": "data-2026-11-07"
   },
   "MA": {
    "continent": "africa",
    "countries": [
     "MA"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-MA-v1.bin",
-   "sha256": "2c984175b182436a71955b6b6c6abfe4e506d25036a406a23d23253a76833a3d",
-   "size": 1281795,
-   "tag": "data-2026-11-03"
+   "sha256": "799f753fd68917dfd71b11c6ac80cea3d75da37548e9e6960df05be2849af379",
+   "size": 1281920,
+   "tag": "data-2026-11-07"
   },
   "MC": {
    "continent": "europe",
    "countries": [
     "MC"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-MC-v1.bin",
-   "sha256": "64f2cae5d04c292d26e7371ff89aceda48f9cf90a09f94a659abf605ecd6fd55",
+   "sha256": "92353ac8d0cfe31a393a5a81c6147afe0c692f3e3ebe8eeed8665950b39362f1",
    "size": 6107,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "MD": {
    "continent": "europe",
    "countries": [
     "MD"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-MD-v1.bin",
-   "sha256": "649f160e2b1a53fa661d3e797a1899bb60d900f08ee6b096356f7f650a0f3fd4",
-   "size": 188850,
-   "tag": "data-2026-11-03"
+   "sha256": "dce8ada626d89df6cdaa20e7b748e466552290a48909bd2ea27e7883a3532f2c",
+   "size": 188877,
+   "tag": "data-2026-11-07"
   },
   "ME": {
    "continent": "europe",
    "countries": [
     "ME"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-ME-v1.bin",
-   "sha256": "a5eaf72ca2f6dec39db73b67d02972fa2e12c40e71a08e4a35b84536ac6aaf9a",
+   "sha256": "e2b61978cfe343f0a340bcfc940be33306ea946e6023d0b4f737f23f240dd027",
    "size": 151695,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "MG": {
    "continent": "africa",
    "countries": [
     "MG"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-MG-v1.bin",
-   "sha256": "41cfbfa2cc7fa443326fc012a9cd93b4c01da5f09e36d59f3fa3880d0e311f98",
+   "sha256": "63945780e9ea6ad5eb342446feb2feb9c590ed8960c8c7496fc44a15068861fc",
    "size": 17547,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "MH": {
    "continent": "oceania",
    "countries": [
     "MH"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-MH-v1.bin",
-   "sha256": "f1f6be7618d9519b0acdf5e3818c56f039e4a7361eda6c4d5754e61a425ae1f4",
+   "sha256": "c3c0726bed03a7e4f0abcbdbaaf4c51cb7099ff22e7b7d33ef0509b50dfd41ac",
    "size": 306,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "MK": {
    "continent": "europe",
    "countries": [
     "MK"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-MK-v1.bin",
-   "sha256": "ee14e5a5803ac6f830c899eb407f2bf0809abc6cd1a4958483ef47e666919cdc",
-   "size": 199716,
-   "tag": "data-2026-11-03"
+   "sha256": "399fed17a2293f6f35d5b83b1ee50edf641c8df39f153a24595acc654eaa535a",
+   "size": 199778,
+   "tag": "data-2026-11-07"
   },
   "ML": {
    "continent": "africa",
    "countries": [
     "ML"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-ML-v1.bin",
-   "sha256": "cd5aad305c2972f56f783f418e24e30df32f97551724834094a6b84537ae988e",
+   "sha256": "f8773d55b0ed8a07b669e2f9be52f9030c833bad3570cf6d3ae8c4f5505f611d",
    "size": 31480,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "MM": {
    "continent": "asia",
    "countries": [
     "MM"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-MM-v1.bin",
-   "sha256": "353d4548e4709ef36c988744085677023cd21bdc290a3c723fff67a692740da1",
-   "size": 194665,
-   "tag": "data-2026-11-03"
+   "sha256": "f330c9a507648db0933d71d48bbde0aa39f53d49f6a9ce99ecf664244040404f",
+   "size": 194697,
+   "tag": "data-2026-11-07"
   },
   "MN": {
    "continent": "asia",
    "countries": [
     "MN"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-MN-v1.bin",
-   "sha256": "3a8fb9ed374b3541c8d6e554c05a85f282579b6b8858986f4b34237c8d014b5c",
-   "size": 250569,
-   "tag": "data-2026-11-03"
+   "sha256": "a4c334e787b5935734b8dd978c84a4ce34bb7578f6156b0917c3f005767caa08",
+   "size": 250543,
+   "tag": "data-2026-11-07"
   },
   "MQ": {
    "continent": "north-america",
    "countries": [
     "MQ"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-MQ-v1.bin",
-   "sha256": "fb4f3492497ab8b9148314c71329dd6aa101435564d62660b488f27510443370",
+   "sha256": "b8fd58bc8250d94734f3979daa541f5e224986d64df1eca0a15aaf2f14dae19f",
    "size": 27426,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "MR": {
    "continent": "africa",
    "countries": [
     "MR"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-MR-v1.bin",
-   "sha256": "2f626aa9d7a7b194b121b7f5a802217186fb4458b1b95ffc1f4333b097a10727",
-   "size": 21702,
-   "tag": "data-2026-11-03"
+   "sha256": "3ab55f4074cea13167ba0324c2acfe0f1545427baa6ade547cc1010272e726cb",
+   "size": 21777,
+   "tag": "data-2026-11-07"
   },
   "MT": {
    "continent": "europe",
    "countries": [
     "MT"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-MT-v1.bin",
-   "sha256": "815e17564aba873ee90f90440d0e070eb2948b9849a2447a4b3213cd29f9fb3a",
-   "size": 61575,
-   "tag": "data-2026-11-03"
+   "sha256": "54c06a1773694a6ffe5d745cea73b2660e02695251b7e119c7f246690ae815db",
+   "size": 61627,
+   "tag": "data-2026-11-07"
   },
   "MU": {
    "continent": "africa",
    "countries": [
     "MU"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-MU-v1.bin",
-   "sha256": "599e673c1dc09b9fae391c6bcf86012cbbcfd83762f809062675a98d74690d55",
-   "size": 106572,
-   "tag": "data-2026-11-03"
+   "sha256": "e1cc5a8d69f41041285a42bd26db3af0ead1761674ee14eeb77ee2c73f003e42",
+   "size": 106593,
+   "tag": "data-2026-11-07"
   },
   "MV": {
    "continent": "asia",
    "countries": [
     "MV"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-MV-v1.bin",
-   "sha256": "6154f0fba72ccc500d33105df054224550eef73f787d6ab367854662cc987ebe",
-   "size": 5827,
-   "tag": "data-2026-11-03"
+   "sha256": "bda860dc4331613f21e4b11b8e6b0878c6bcfa9aa659dd829246ad8bbedd9b15",
+   "size": 5842,
+   "tag": "data-2026-11-07"
   },
   "MW": {
    "continent": "africa",
    "countries": [
     "MW"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-MW-v1.bin",
-   "sha256": "8c7b916d460aec60e095cafdb27360eba9b642569a1d073bd60a5c1466031465",
-   "size": 51272,
-   "tag": "data-2026-11-03"
+   "sha256": "3c5df0092c25c7826e40456739e8d0041a42df26928f42985271f04e875e51f4",
+   "size": 51279,
+   "tag": "data-2026-11-07"
   },
   "MX": {
    "continent": "north-america",
    "countries": [
     "MX"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-MX-v1.bin",
-   "sha256": "d49da689be4ee7bc52196b1b897c03c64a6de4bb7aa98200d54ef388e60b5e1b",
-   "size": 3370553,
-   "tag": "data-2026-11-03"
+   "sha256": "a5ddd450603eb34b82aa88336f8450b895565b9242ed93587d7057bbdd9cf874",
+   "size": 3371757,
+   "tag": "data-2026-11-07"
   },
   "MY": {
    "continent": "asia",
@@ -1340,319 +1340,319 @@
     "SG",
     "BN"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-MY-v1.bin",
-   "sha256": "fe080bdca5a0028bedb0f1a64ccad9d3d9e0c699d6c0ba43e5c24f0c0b94f0c5",
-   "size": 1198788,
-   "tag": "data-2026-11-03"
+   "sha256": "16fb202306ef375585371b48bfda30e539f29fb0e3d5c3cef56ddb3e67c09dd5",
+   "size": 1200136,
+   "tag": "data-2026-11-07"
   },
   "MZ": {
    "continent": "africa",
    "countries": [
     "MZ"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-MZ-v1.bin",
-   "sha256": "e4d68e93b5c39f51490a3fac01ae94e312e7fe268d85e344d9610878f05a8d07",
-   "size": 79241,
-   "tag": "data-2026-11-03"
+   "sha256": "6bb5c13c88e17b67145f678c8c7d8bbf1496859da3cbe388b0f1fe07296b4240",
+   "size": 79247,
+   "tag": "data-2026-11-07"
   },
   "NA": {
    "continent": "africa",
    "countries": [
     "NA"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-NA-v1.bin",
-   "sha256": "1317713e881144355dc029bfee7efee7563fd82d210cbde356e96d83969125f1",
-   "size": 1021754,
-   "tag": "data-2026-11-03"
+   "sha256": "5e87682b0a6d5bdbc073db643ba696b01606d466a513eac5e8ba437bd42f1bd2",
+   "size": 1021753,
+   "tag": "data-2026-11-07"
   },
   "NC": {
    "continent": "oceania",
    "countries": [
     "NC"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-NC-v1.bin",
-   "sha256": "fbe9fbdbb10a835cf81d608836a7fcc0fe2481ac25abe863ac64f8cb76c7f0c9",
-   "size": 259493,
-   "tag": "data-2026-11-03"
+   "sha256": "aa8e0c883399d26067670268e477115cb5c0ae64d5e4c534f7ab47368de522b4",
+   "size": 259587,
+   "tag": "data-2026-11-07"
   },
   "NE": {
    "continent": "africa",
    "countries": [
     "NE"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-NE-v1.bin",
-   "sha256": "86e8f78cc0ea200bbc38431ba5fd3a27d065551aebcf7795be147289d3dfd74b",
-   "size": 9859,
-   "tag": "data-2026-11-03"
+   "sha256": "f6cec71a966eece822343214d2b62b8b50026976613c7b692becccf5549eb6f2",
+   "size": 9848,
+   "tag": "data-2026-11-07"
   },
   "NG": {
    "continent": "africa",
    "countries": [
     "NG"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-NG-v1.bin",
-   "sha256": "5af42e893dfaa7a8adf6d3a00ce185499be58e10ec3fe6f61cf0c5d2f5056795",
+   "sha256": "322aa00f55a09f8a6e7c8c0cc1030104c1e2eadf4ce131c6bd3b2ea61f7d21ec",
    "size": 141606,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "NI": {
    "continent": "north-america",
    "countries": [
     "NI"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-NI-v1.bin",
-   "sha256": "cd6e964304f8be4ccc49a47a80e88ad05a63639e062736a9e7bfb3d5971aa020",
-   "size": 155941,
-   "tag": "data-2026-11-03"
+   "sha256": "65bfbd246ead59fbae513654c6d7a403e63badb92aeb0cd174504f7ae53dbbd4",
+   "size": 155936,
+   "tag": "data-2026-11-07"
   },
   "NL": {
    "continent": "europe",
    "countries": [
     "NL"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-NL-v1.bin",
-   "sha256": "1337d7e51398e60e14f25332261f0c21fcba0d7792c54bc591507ff8e937be6d",
-   "size": 9218762,
-   "tag": "data-2026-11-03"
+   "sha256": "e0e9ff9e31bac900856eaa04feda670d3cfbe4ce3ddd7073784c22432a5da73b",
+   "size": 9222328,
+   "tag": "data-2026-11-07"
   },
   "NO": {
    "continent": "europe",
    "countries": [
     "NO"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-NO-v1.bin",
-   "sha256": "71cc151310a030999c7886bd273c232e7f01abc317cc48890fc3dcc24ce4c8c6",
-   "size": 4268326,
-   "tag": "data-2026-11-03"
+   "sha256": "94043a5460d72f55a988ab65b27d2689d0b3d4888996de9745b56f6789292784",
+   "size": 4268842,
+   "tag": "data-2026-11-07"
   },
   "NP": {
    "continent": "asia",
    "countries": [
     "NP"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-NP-v1.bin",
-   "sha256": "1cbd7b5be9963291b319515fd32cec2bd169badfb322b073a7d395b3432fb031",
-   "size": 152983,
-   "tag": "data-2026-11-03"
+   "sha256": "98b2337dd2baa02b6d6a25845dbb70a002ebf9b8876b1a69b88742e52944f05c",
+   "size": 152988,
+   "tag": "data-2026-11-07"
   },
   "NR": {
    "continent": "oceania",
    "countries": [
     "NR"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-NR-v1.bin",
-   "sha256": "6cff5f0bedb051b694a68b06400979a224247bcff76efd0526d36c8537860e87",
-   "size": 2780,
-   "tag": "data-2026-11-03"
+   "sha256": "1ed25ffd86a9b8a4edda0ae442d9e2de891001a51b851e666290ef65c1359160",
+   "size": 2786,
+   "tag": "data-2026-11-07"
   },
   "NU": {
    "continent": "oceania",
    "countries": [
     "NU"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-NU-v1.bin",
-   "sha256": "6058866b20095fcd433eb888a39e165812f6ec9315f049387abba30a3e8c4a44",
+   "sha256": "f01d5a4eac6b38abe1c22806cd17bf93d1fbc8507d1cd73e5fe3b2b28cf8c922",
    "size": 3979,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "NZ": {
    "continent": "oceania",
    "countries": [
     "NZ"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-NZ-v1.bin",
-   "sha256": "4f2b2cf7ce8f4f4fa60197bf13c50ad9cf079fa727a7f175de12cd7a839a465f",
-   "size": 2321458,
-   "tag": "data-2026-11-03"
+   "sha256": "b9066b1ea80bd4dbaf5ea4a2a603030b7cadcaf85ac592e70137f35a37654d84",
+   "size": 2321690,
+   "tag": "data-2026-11-07"
   },
   "PA": {
    "continent": "north-america",
    "countries": [
     "PA"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-PA-v1.bin",
-   "sha256": "e393f3439bdba84601ad77910b719a0a3acb0cec386e670468d09f8db2e420b2",
-   "size": 193844,
-   "tag": "data-2026-11-03"
+   "sha256": "2896ac0eac58f1d4f2bb37d8b93892653520bed26137995619f9f643c3ca5c51",
+   "size": 193880,
+   "tag": "data-2026-11-07"
   },
   "PE": {
    "continent": "south-america",
    "countries": [
     "PE"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-PE-v1.bin",
-   "sha256": "e33d23ff070a4a94c2eae3d852d46dc6d3325fc60327665ccc6514b3208bccb8",
-   "size": 1356435,
-   "tag": "data-2026-11-03"
+   "sha256": "b81c8f499da2ab2f1cd7f86d8340cb1d4ef6659ca76ee503dc62443aef6d9603",
+   "size": 1356814,
+   "tag": "data-2026-11-07"
   },
   "PF": {
    "continent": "oceania",
    "countries": [
     "PF"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-PF-v1.bin",
-   "sha256": "7abdc2d149676f75a4e9d2d531c9d3a71360ba681b883be49d20dbfd16a7f129",
+   "sha256": "48578299b2608cdb2369d602f01ecaf117b7a0158c69545aee729230a4236e57",
    "size": 19580,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "PG": {
    "continent": "oceania",
    "countries": [
     "PG"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-PG-v1.bin",
-   "sha256": "816b81066a4a4d0e0d0ae1c5ae10dbf663f25316ef35067e40fa7c3cb74e59b2",
+   "sha256": "93a7258efca130008ba0929847d716251e775c89ca0e221cb864fc039f7d177e",
    "size": 31215,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "PH": {
    "continent": "asia",
    "countries": [
     "PH"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-PH-v1.bin",
-   "sha256": "61b5ad189da44e4add2150decaddeed737d340c2338cac090c4213d9b33351bf",
-   "size": 1552754,
-   "tag": "data-2026-11-03"
+   "sha256": "1ef8fc3ea7ec46b6f3131e0973122c161e76af3265161f4e701952473a331428",
+   "size": 1559138,
+   "tag": "data-2026-11-07"
   },
   "PK": {
    "continent": "asia",
    "countries": [
     "PK"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-PK-v1.bin",
-   "sha256": "aaf94cfc45fccfa556d2974c395d8a6134850a55015244fda1db70c2056d009b",
-   "size": 1246240,
-   "tag": "data-2026-11-03"
+   "sha256": "3288e5e3771cea8d047926f45a70528a4a7ada6c3d67fbe6ee13b3dab19933a5",
+   "size": 1246207,
+   "tag": "data-2026-11-07"
   },
   "PL": {
    "continent": "europe",
    "countries": [
     "PL"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-PL-v1.bin",
-   "sha256": "9e6bb75dc305d28b3e8cc2b31e0f1514aab4637b606c5048675f2040c18025d7",
-   "size": 7586296,
-   "tag": "data-2026-11-03"
+   "sha256": "5cc05a2ee5c783f3f82a5708f24bdd669fe0452cb5eb13e10ea6db243f1491d3",
+   "size": 7589511,
+   "tag": "data-2026-11-07"
   },
   "PR": {
    "continent": "north-america",
    "countries": [
     "PR"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-PR-v1.bin",
-   "sha256": "a8d8de73cc949ebef21dcf38606a89282fb7ede0e08ae2aeb50cea23b457a1a9",
-   "size": 57247,
-   "tag": "data-2026-11-03"
+   "sha256": "a198f99df3df623e910bef985c569b1372550466c1ed2dac5459fe478348b08a",
+   "size": 57230,
+   "tag": "data-2026-11-07"
   },
   "PT": {
    "continent": "europe",
    "countries": [
     "PT"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-PT-v1.bin",
-   "sha256": "daf09011a48d045dbb4016801f59d484f788bdc9a1a479838eca7debca448ffa",
-   "size": 2106721,
-   "tag": "data-2026-11-03"
+   "sha256": "b345226603279b662e0c5030f38ca0de5be9ffc669eaf83d4111061a292ba6e9",
+   "size": 2108038,
+   "tag": "data-2026-11-07"
   },
   "PW": {
    "continent": "oceania",
    "countries": [
     "PW"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-PW-v1.bin",
-   "sha256": "368d8d1893174f68be0977ac4fcd15e46caa31a4285ade0bb6f43fdcd84c3e51",
+   "sha256": "f1e62ad74becdea3aa79ed083690133c308f01fd45ee5c846dab2e81083a9742",
    "size": 53,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "PY": {
    "continent": "south-america",
    "countries": [
     "PY"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-PY-v1.bin",
-   "sha256": "b6cbc0d1a035246334a65f6f6b286e984a744b90678b3b55e8c355c96c54f5eb",
+   "sha256": "0cfad9d3d2813ae917d95bfbd167aba42b8b0706c2b92f322138f487f05f99ce",
    "size": 305681,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "RE": {
    "continent": "africa",
    "countries": [
     "RE"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-RE-v1.bin",
-   "sha256": "63d0ed81d84705fc5a8c20032bde3360371559b40d539a2e9cb4fb29048d2fb5",
-   "size": 133745,
-   "tag": "data-2026-11-03"
+   "sha256": "ca88b078765b26ac9a086af46c392ef77aa893a9f59a90db76929afb36cbce2a",
+   "size": 133749,
+   "tag": "data-2026-11-07"
   },
   "RO": {
    "continent": "europe",
    "countries": [
     "RO"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-RO-v1.bin",
-   "sha256": "ef03e9c3477d5a7eb2d063083c2023ec6525926f43646831223ed17f1626d138",
-   "size": 7092030,
-   "tag": "data-2026-11-03"
+   "sha256": "75ddbfee1166b762393a0d70ff245e13a31c813c6f45f6f42a17864a64a4f3e2",
+   "size": 7093799,
+   "tag": "data-2026-11-07"
   },
   "RS": {
    "continent": "europe",
    "countries": [
     "RS"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-RS-v1.bin",
-   "sha256": "9af2d3761d3b1397484ff79fd2799ad70db265ab8c29882ad90ff29eada0166e",
-   "size": 1396514,
-   "tag": "data-2026-11-03"
+   "sha256": "83672886e3717dd8cae868f335c7d006722f5c71839ca7ed4dd1e1994529da99",
+   "size": 1401849,
+   "tag": "data-2026-11-07"
   },
   "RU": {
    "continent": "europe",
    "countries": [
     "RU"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-RU-v1.bin",
-   "sha256": "d3ba3b0727c87118bba3fda4d91f1ec9dbb32c99bd7111b0670e315b30b7b924",
-   "size": 9909082,
-   "tag": "data-2026-11-03"
+   "sha256": "50201532c970dcd1cc8765cef9cd4e5a6c628061583c76097e8ddc5bf17ca590",
+   "size": 9916665,
+   "tag": "data-2026-11-07"
   },
   "RW": {
    "continent": "africa",
    "countries": [
     "RW"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-RW-v1.bin",
-   "sha256": "449afa88e8e197701051a55e998986cabe6e9be71f34f33946fed44d4ba895b4",
-   "size": 28870,
-   "tag": "data-2026-11-03"
+   "sha256": "5cd262205c8c879ef571c01652bf30ad52d5a4fa4c33c231a46b910ff8c8f5d0",
+   "size": 28910,
+   "tag": "data-2026-11-07"
   },
   "SA": {
    "continent": "asia",
@@ -1664,99 +1664,99 @@
     "KW",
     "BH"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-SA-v1.bin",
-   "sha256": "921f97221c012d5897a8fdccd5960f35ad199cbb1d148d05f9e64c95b1f3ef3a",
-   "size": 1812799,
-   "tag": "data-2026-11-03"
+   "sha256": "4b35d540daf536e4a370718e871f4134e9739b78c0db3eda1b354355542e1a79",
+   "size": 1814492,
+   "tag": "data-2026-11-07"
   },
   "SB": {
    "continent": "oceania",
    "countries": [
     "SB"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-SB-v1.bin",
-   "sha256": "fb2112b20849f9de58fbbe03d8c11fe128afccecf749a7ce287886fbf572099b",
+   "sha256": "1951af1a94f04a4442331ee552517d47601ed6798604b1a7bb125db2debb858d",
    "size": 326,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "SC": {
    "continent": "africa",
    "countries": [
     "SC"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-SC-v1.bin",
-   "sha256": "4902d643621b2f3b85856052d112063baf460751c7072beee69e3576667ebbac",
+   "sha256": "a95606d89b9448638a709bf2f7e369a3e8b0bdb8b0d35d08669c531ab0191932",
    "size": 4083,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "SD": {
    "continent": "africa",
    "countries": [
     "SD"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-SD-v1.bin",
-   "sha256": "4d968a847c36f0ccf931a1586e47da480d966836925a55186b95b3b796e347a9",
-   "size": 28312,
-   "tag": "data-2026-11-03"
+   "sha256": "d02b893f3e5e688cb5d087a49dcbe5f8671030126d7a9bcfecc1be14d82d5215",
+   "size": 28309,
+   "tag": "data-2026-11-07"
   },
   "SE": {
    "continent": "europe",
    "countries": [
     "SE"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-SE-v1.bin",
-   "sha256": "a0aec17fc18afa5d20846aa3b2ccca38b54feb879a0049a10687f089f0370d15",
-   "size": 8328432,
-   "tag": "data-2026-11-03"
+   "sha256": "cc31b0068632948c6951b575818849ee28322ac02313c59fe377d8fd5ff63494",
+   "size": 8330134,
+   "tag": "data-2026-11-07"
   },
   "SH": {
    "continent": "africa",
    "countries": [
     "SH"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-SH-v1.bin",
-   "sha256": "72f32c0fbdb62e25850e3a5231062f59cf4d1a1cd922732bc4d48f679deb7e1e",
+   "sha256": "3b3b9dd016a38f146f621aee5d8981251d88bb71783b21718de1aa9e0b71c4c3",
    "size": 482,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "SI": {
    "continent": "europe",
    "countries": [
     "SI"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-SI-v1.bin",
-   "sha256": "13c1d1db2c30212819ae3bdb12714688d926d757ad0e8efbac3ad98981dcfb33",
-   "size": 586259,
-   "tag": "data-2026-11-03"
+   "sha256": "3c916bab0d63d05c5ef758dd9607ba8012031d2ada4552e84d238ab5afaee5fa",
+   "size": 586668,
+   "tag": "data-2026-11-07"
   },
   "SK": {
    "continent": "europe",
    "countries": [
     "SK"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-SK-v1.bin",
-   "sha256": "7aab928e27255f84e932c2e8b412b16d42ec52cedc0a38e9de2cea7a6cabafcd",
-   "size": 1177470,
-   "tag": "data-2026-11-03"
+   "sha256": "9c014e67d2b37beedd884fb33be61c2545850d1ade4b33a59626d7838feeb825",
+   "size": 1178287,
+   "tag": "data-2026-11-07"
   },
   "SL": {
    "continent": "africa",
    "countries": [
     "SL"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-SL-v1.bin",
-   "sha256": "e1c578f7ae85c78e9ac7144ad147517e659b1a488d64fe074c5d92c3c686806b",
+   "sha256": "34cf5499e1266d167544a0829e2d97e6e57574563af0fe8db0b2868669e72a2a",
    "size": 13190,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "SN": {
    "continent": "africa",
@@ -1764,396 +1764,396 @@
     "SN",
     "GM"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-SN-v1.bin",
-   "sha256": "cc3e7890e35d491d654da143e43f6f272e2483d0a5d44f1c6b80aaa6feecbad3",
-   "size": 111501,
-   "tag": "data-2026-11-03"
+   "sha256": "ddde34486021ca3839239a2e56c35d07924d0f34c0795692d5c5d9dbc0f7394c",
+   "size": 111510,
+   "tag": "data-2026-11-07"
   },
   "SO": {
    "continent": "africa",
    "countries": [
     "SO"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-SO-v1.bin",
-   "sha256": "94d22c93506fad66bedc582617c4e750f258a446292bb96ba207f6306443bfdb",
-   "size": 6162,
-   "tag": "data-2026-11-03"
+   "sha256": "104347220a738d46234605430e3f2dd6a3a312f3a373554012509a6a04b45bbb",
+   "size": 6166,
+   "tag": "data-2026-11-07"
   },
   "SR": {
    "continent": "south-america",
    "countries": [
     "SR"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-SR-v1.bin",
-   "sha256": "ee2fe63d591c95973ec8b094eafd70eb76ea4701a1d8c5266f68151a320032fe",
-   "size": 67968,
-   "tag": "data-2026-11-03"
+   "sha256": "0d69f5e0e9476863a66956af4bb0d12ee810d006d74579582c5a8b1c6c2d27fc",
+   "size": 67963,
+   "tag": "data-2026-11-07"
   },
   "SS": {
    "continent": "africa",
    "countries": [
     "SS"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-SS-v1.bin",
-   "sha256": "475c08fdf8c9fd94417b2810489152513b03b01b4b95535ea4b65619545c6071",
+   "sha256": "1b12342dccadcf8923560bb7f6244ffbc453a432ee6fe7040517d54ac064b3a8",
    "size": 4049,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "ST": {
    "continent": "africa",
    "countries": [
     "ST"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-ST-v1.bin",
-   "sha256": "0a2243715482a1c92dc7449125f8a53bbf3a8c12209c9739d41037643361e304",
+   "sha256": "19e25fb130a798271cfdcf340772356036d69c3efc6fc4b40c9f7c2f0569c8bb",
    "size": 1554,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "SV": {
    "continent": "north-america",
    "countries": [
     "SV"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-SV-v1.bin",
-   "sha256": "1452f0298f74f866afac3dbcd622cc954fbcf2e608eb1bd62a7571d2c5dbe4f4",
-   "size": 109753,
-   "tag": "data-2026-11-03"
+   "sha256": "c257a8076077d8dc114b47848ae7309ca734d847a7227cc5b9499d1f5d27de31",
+   "size": 109757,
+   "tag": "data-2026-11-07"
   },
   "SY": {
    "continent": "asia",
    "countries": [
     "SY"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-SY-v1.bin",
-   "sha256": "b963d4ff3d0ad82dd1214d48bc124950bd87e2625f36f05f956f7eb2a619816d",
-   "size": 82415,
-   "tag": "data-2026-11-03"
+   "sha256": "f488f4e9313a71fc47baf26da7a042cf15e775fb5f6053781349dbbf23192fbc",
+   "size": 82420,
+   "tag": "data-2026-11-07"
   },
   "SZ": {
    "continent": "africa",
    "countries": [
     "SZ"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-SZ-v1.bin",
-   "sha256": "9f40d430543f772afbd969baf6e37ddbe58b6652795fc593fb727428e60c91cc",
-   "size": 47266,
-   "tag": "data-2026-11-03"
+   "sha256": "9a4d008009e89687955b02409e8ad8798cbb3fbce7a11434205112341bbd8931",
+   "size": 47265,
+   "tag": "data-2026-11-07"
   },
   "TD": {
    "continent": "africa",
    "countries": [
     "TD"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-TD-v1.bin",
-   "sha256": "4ca974f5e94272970994b3eec8f7b5669d6a00e27a3a82a698454f9cd0f68674",
+   "sha256": "fd61a702541ea7542baede4520075626eee07ef3f556307fceeedde52604b9c1",
    "size": 21136,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "TG": {
    "continent": "africa",
    "countries": [
     "TG"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-TG-v1.bin",
-   "sha256": "89185eb9db8c98074965a0a95a7f2f1e1b0a531b459cd6a1ef61d9af734f7bdc",
+   "sha256": "87f6bac1361d807840fc820a5a0dc67c29af722f415e438a2506210aa75918e2",
    "size": 17244,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "TH": {
    "continent": "asia",
    "countries": [
     "TH"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-TH-v1.bin",
-   "sha256": "00e820a1e9d0ae64f25bf4d2e74adb31f84c3240d1918c2c834c82f6d4a97df8",
-   "size": 576352,
-   "tag": "data-2026-11-03"
+   "sha256": "6b30321f42e9c0d7d95371cb0c2cac9eb6465a7fd19eb44ca6076e08a39ca315",
+   "size": 578205,
+   "tag": "data-2026-11-07"
   },
   "TJ": {
    "continent": "asia",
    "countries": [
     "TJ"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-TJ-v1.bin",
-   "sha256": "2dadcddd84007f77f73d6a6aee163db1e53cc90f7c8614fd7521dbece766298f",
-   "size": 81371,
-   "tag": "data-2026-11-03"
+   "sha256": "2f20d86bc43a07991f5e1367fdc0fed413f5019766445f5eeefeffce89bae71f",
+   "size": 81372,
+   "tag": "data-2026-11-07"
   },
   "TL": {
    "continent": "asia",
    "countries": [
     "TL"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-TL-v1.bin",
-   "sha256": "6cae4b7b6ecc27cf5e23ef76897da9638b120d71dfac9eb44cfe88632366df80",
+   "sha256": "826778e1d1ca637553ddbc15895b2555111f05e44c40fa616b84b275cdfad4bc",
    "size": 7794,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "TM": {
    "continent": "asia",
    "countries": [
     "TM"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-TM-v1.bin",
-   "sha256": "15811ab92c4d976f850631ca768b70df18d29f5c5728fcc52331c9dcf94c8ce3",
+   "sha256": "5fab65ac53fab200b4cbe194eb667c5d8565d38a9071a499fd72e77cf0adf4d5",
    "size": 96064,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "TN": {
    "continent": "africa",
    "countries": [
     "TN"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-TN-v1.bin",
-   "sha256": "d8d8188da814a1da3d7871c9db095a7d8ac3c3cc801efec9a451934acd215e5d",
-   "size": 201293,
-   "tag": "data-2026-11-03"
+   "sha256": "4e0bdd8cc742389f4de88dd0773ab032b393d06c9eee5f8bcd1710bd5be80408",
+   "size": 201344,
+   "tag": "data-2026-11-07"
   },
   "TO": {
    "continent": "oceania",
    "countries": [
     "TO"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-TO-v1.bin",
-   "sha256": "134559f9cdc10e996f75872794c396710fe1ffe82e0ef40befac4605bccd47c8",
+   "sha256": "d3ba9c272337be63a3f5e42eb8bdd64cdd32a7146a7ab5b814b6822a2ee4b563",
    "size": 1556,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "TR": {
    "continent": "europe",
    "countries": [
     "TR"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-TR-v1.bin",
-   "sha256": "bda0a9da46d072398b4d2e7fe86c424a07ff5a006291de9c672a79297546db3d",
-   "size": 1807109,
-   "tag": "data-2026-11-03"
+   "sha256": "081a875e4b174ab08308dc915cec5b927e8428ced35e0ccb2e859473679ea802",
+   "size": 1821494,
+   "tag": "data-2026-11-07"
   },
   "TV": {
    "continent": "oceania",
    "countries": [
     "TV"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-TV-v1.bin",
-   "sha256": "5f65c44bcd7c04470d18a7c88b46f9c67c8c68f99df487fa861407a69d21ded7",
+   "sha256": "27f4b3fe8febdc052e1c52ee9603d812f4bf2e89c015d9fb2901b1c5c1632c96",
    "size": 428,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "TW": {
    "continent": "asia",
    "countries": [
     "TW"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-TW-v1.bin",
-   "sha256": "c1a44365bb007fadd1e3346558243e389659de36ecf91f18450c93f6802eb592",
-   "size": 518360,
-   "tag": "data-2026-11-03"
+   "sha256": "383cad85e5c09f78fb775628f5f89ddd5f358617ffc51ffbf705b9a8af88ab8c",
+   "size": 516591,
+   "tag": "data-2026-11-07"
   },
   "TZ": {
    "continent": "africa",
    "countries": [
     "TZ"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-TZ-v1.bin",
-   "sha256": "328427455fdfb56ef5adbfa8fd063be10e4ebd832ca1c09fd5cc418faacf49c6",
-   "size": 227789,
-   "tag": "data-2026-11-03"
+   "sha256": "54d762b744c07c9069414daae61be7f53010b00ca84e96a15339c269fc98a40e",
+   "size": 227335,
+   "tag": "data-2026-11-07"
   },
   "UA": {
    "continent": "europe",
    "countries": [
     "UA"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-UA-v1.bin",
-   "sha256": "988204bf259efc1b8d645916dde5c7ef5a73e40e77b57e9f864fbc5ee444db87",
-   "size": 2515983,
-   "tag": "data-2026-11-03"
+   "sha256": "3cdac5c85d9c57678178470f3d7e1b95ad804aaa910d7952220d34e5e0f68c31",
+   "size": 2519180,
+   "tag": "data-2026-11-07"
   },
   "UG": {
    "continent": "africa",
    "countries": [
     "UG"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-UG-v1.bin",
-   "sha256": "fdff918fdd2daf1851e1ca073228fb1d2fdfb2da9609f33aa126aa999881efec",
+   "sha256": "024ae354b614f1a68e207a14aa1d99e98efce016b4ad341167bb215751ecf5b7",
    "size": 85757,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "US": {
    "continent": "north-america",
    "countries": [
     "US"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-US-v1.bin",
-   "sha256": "a5c3d82078472603d0ee3ce4ca39629b6ebf1e1cf4702d46c3c3fba0d27dc8d6",
-   "size": 59138830,
-   "tag": "data-2026-11-03"
+   "sha256": "9194734e61ad3f31c29a461cc7aa97cfe508a9935c51913bd03552b69ddcf890",
+   "size": 59215605,
+   "tag": "data-2026-11-07"
   },
   "UY": {
    "continent": "south-america",
    "countries": [
     "UY"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-UY-v1.bin",
-   "sha256": "293c698f451c5535250a6521ecac7adcc2af420fd1d15499ad6d37d35b3cdd2b",
-   "size": 228836,
-   "tag": "data-2026-11-03"
+   "sha256": "045e574a3e82c988703b7d024791ebb74034fffc3f0ef37b73f4b045f1c73b70",
+   "size": 228909,
+   "tag": "data-2026-11-07"
   },
   "UZ": {
    "continent": "asia",
    "countries": [
     "UZ"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-UZ-v1.bin",
-   "sha256": "f73a7883f069c6c6d3b86c9dfaf7dc0f04149556df7ed1150cc9a03391b55936",
-   "size": 345777,
-   "tag": "data-2026-11-03"
+   "sha256": "333282f03f484b63989119b5b6cced7617c2ef5c54ae492800860e310b4102fb",
+   "size": 346359,
+   "tag": "data-2026-11-07"
   },
   "VE": {
    "continent": "south-america",
    "countries": [
     "VE"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-VE-v1.bin",
-   "sha256": "ef06e642771c89e2b71a04b2a5544bbccbc866ef62443bca5d8143fdb2ec1fc7",
-   "size": 1042043,
-   "tag": "data-2026-11-03"
+   "sha256": "c4c523a44924313b49a728925c19b8feb0bd76f3f95179d04307083aff65e3de",
+   "size": 1042463,
+   "tag": "data-2026-11-07"
   },
   "VI": {
    "continent": "north-america",
    "countries": [
     "VI"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-VI-v1.bin",
-   "sha256": "50542de1552c1f748eae0b25810d564662f409a79281452d5609967f94e46fc6",
+   "sha256": "cbe9b94a5e1faefe12506c091ed7ef7bc7decb18a04676d50173e02b7c330962",
    "size": 10835,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "VN": {
    "continent": "asia",
    "countries": [
     "VN"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-VN-v1.bin",
-   "sha256": "91cab201ca71b166e4572e30ee2cd31030e39c0b0ae663634fa6b35ec17b3a41",
-   "size": 893920,
-   "tag": "data-2026-11-03"
+   "sha256": "8306fa1496feb4f3d78ec0f461e90fcb3d060e69b25ea942ec0f7c2ad76e8ac3",
+   "size": 900514,
+   "tag": "data-2026-11-07"
   },
   "VU": {
    "continent": "oceania",
    "countries": [
     "VU"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-VU-v1.bin",
-   "sha256": "20b1f322675d8a9e04ed049289aae49453702498c2c274acad43d2a4e152ea3e",
+   "sha256": "55990ce2204387609a1c815acc7fbff096eb5281fda9534c1f0800836b4cc380",
    "size": 426,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "WS": {
    "continent": "oceania",
    "countries": [
     "WS"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-WS-v1.bin",
-   "sha256": "3c7a0dc1cb433f9fef16d5572e6788d635dcdf85ca5699baf25a442d6fa36e42",
+   "sha256": "a1bbd3f1da014339b2f2e1f6f0f53a6db73e2ad53d101413062251b954be6f60",
    "size": 1330,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "XK": {
    "continent": "europe",
    "countries": [
     "XK"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-XK-v1.bin",
-   "sha256": "2fb068b27c15ac450fb674042fccffbb56ce28d9f35843335be7d9f13363b865",
-   "size": 158118,
-   "tag": "data-2026-11-03"
+   "sha256": "70899e874eeedbfa61d8095b2afa4abecca5ec9babe330cd51deb6ea1db460b2",
+   "size": 158115,
+   "tag": "data-2026-11-07"
   },
   "YE": {
    "continent": "asia",
    "countries": [
     "YE"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-YE-v1.bin",
-   "sha256": "7f0d5e24dc490cb2339068a459dcea7d99eaa26bb0f05143a66465a105677954",
+   "sha256": "7836d9623b9ecef06e35f8e1f80cea25eb1104fa3fa9db02dd04c29584916ca0",
    "size": 139354,
-   "tag": "data-2026-11-03"
+   "tag": "data-2026-11-07"
   },
   "YT": {
    "continent": "africa",
    "countries": [
     "YT"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-YT-v1.bin",
-   "sha256": "3bbb347dac7b567c45e5827073d69b46a0ca0ed7a6593a929ac08db65eab381c",
-   "size": 29354,
-   "tag": "data-2026-11-03"
+   "sha256": "f228a9731b970e0844bcc70b7bad86dba33923adac6d326b3283b1fae00ef59b",
+   "size": 29380,
+   "tag": "data-2026-11-07"
   },
   "ZA": {
    "continent": "africa",
    "countries": [
     "ZA"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-ZA-v1.bin",
-   "sha256": "f4fc6cb3a46590f1354a7f603e9f6473c2f5fc020cf894c3172de0a4cae2e0dd",
-   "size": 1905132,
-   "tag": "data-2026-11-03"
+   "sha256": "a64463e4f881eaa689996995e85cee6a6b0efaadd039d995b7be00a2b3127bab",
+   "size": 1905404,
+   "tag": "data-2026-11-07"
   },
   "ZM": {
    "continent": "africa",
    "countries": [
     "ZM"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-ZM-v1.bin",
-   "sha256": "44e65e46dc0163379d0422109a0091569c24d8081466b681aa7559075bc4aba9",
-   "size": 62071,
-   "tag": "data-2026-11-03"
+   "sha256": "7559f61fe86d3256e27ee1ae217ddca2fc70b1a98d51f10701bf5958bff1dad8",
+   "size": 62081,
+   "tag": "data-2026-11-07"
   },
   "ZW": {
    "continent": "africa",
    "countries": [
     "ZW"
    ],
-   "dataDate": "2026-11-03",
+   "dataDate": "2026-11-07",
    "file": "roads-ZW-v1.bin",
-   "sha256": "8005d3e1bc9fc82eb7a2192372e24e0dedaf4872253e7b5b3264d39625a854fa",
-   "size": 210606,
-   "tag": "data-2026-11-03"
+   "sha256": "07794ac23e25b4de0bb892b454a07c96e6039c1a7732317cb9d7a50cb0cd5002",
+   "size": 210594,
+   "tag": "data-2026-11-07"
   }
  },
  "schema": 1
