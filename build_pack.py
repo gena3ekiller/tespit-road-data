@@ -8,6 +8,12 @@ Usage: build_pack.py CC YYYY-MM-DD raw/<extract>-latest.osm.pbf [more extracts o
 2. `osmium export` turns them into GeoJSON lines.
 3. The roads are simplified, cut into pieces of at most ~800 m and sorted into cells of 0.05°; each
    cell is one raw-deflate block, so the app reads only the cells around the car (format in README).
+4. Signs stand exactly on their road (10.11.2026, Esat: side streets' signs showed as if ahead): a sign node is
+   kept as a point of every exported road it lies on, so simplifying never moves the road away from it; a sign on
+   no exported road is left out (the app shows signs only on a road it knows); a stop or give-way on the node where
+   a bigger and a smaller road meet moves 5 m into the smaller one, which it belongs to; a level crossing only on
+   tram tracks is left out (no St Andrew's cross there). Packs from this date on
+   let the app ask for a sign right on its road (`RoadMatcher` in both apps).
 
 Code MIT, data ODbL 1.0 (© OpenStreetMap contributors).
 """
@@ -116,8 +122,16 @@ def meters(lat1, lon1, lat2, lon2):
     return math.hypot(x, y) * 6371000.0
 
 
-def simplify(points, tolerance):
-    """Douglas-Peucker on a local flat projection."""
+def simplify(points, tolerance, fixed=()):
+    """Douglas-Peucker on a local flat projection; the points at the indices in `fixed` always stay."""
+    fixed = sorted(i for i in set(fixed) if 0 < i < len(points) - 1)
+    if fixed:
+        out, start = [], 0
+        for index in fixed + [len(points) - 1]:
+            part = simplify(points[start:index + 1], tolerance)
+            out.extend(part if not out else part[1:])
+            start = index
+        return out
     if len(points) < 3:
         return points
     lat0 = math.radians(points[0][1])
@@ -192,7 +206,10 @@ def run(cmd):
 
 
 FILTER = ["w/maxspeed", "w/maxspeed:forward", "w/maxspeed:backward", "w/overtaking", "w/overtaking:forward",
-          "w/overtaking:backward", "n/highway=stop,give_way,crossing", "n/railway=level_crossing"]
+          "w/overtaking:backward", "n/highway=stop,give_way,crossing", "n/railway=level_crossing",
+          # Only to tell a tram crossing from a level crossing with a St Andrew's cross (never written).
+          "w/railway=tram,rail,light_rail,narrow_gauge"]
+TRAM = {"tram"}
 
 
 def filtered_features(country, pbfs, work):
@@ -208,11 +225,121 @@ def filtered_features(country, pbfs, work):
         filtered = os.path.join(work, f"{country}-filtered.osm.pbf")
         run(["osmium", "merge", "--overwrite", "-o", filtered, *parts])
     run(["osmium", "export", "--overwrite", "-f", "geojsonseq", "--geometry-types=linestring,point", "-o", lines, filtered])
+    return lines
+
+
+def read_features(lines):
     with open(lines, encoding="utf-8") as handle:
         for line in handle:
             line = line.strip().lstrip("\x1e")
             if line:
                 yield json.loads(line)
+
+
+def sign_kind(tags):
+    if tags.get("highway") == "stop":
+        return SIGN_STOP
+    if tags.get("highway") == "give_way":
+        return SIGN_GIVE_WAY
+    if tags.get("railway") == "level_crossing":
+        return SIGN_LEVEL_CROSSING
+    if tags.get("highway") == "crossing" and (tags.get("crossing") in ("zebra", "uncontrolled", "marked")
+                                             or tags.get("crossing_ref") == "zebra"):
+        return SIGN_ZEBRA
+    return None
+
+
+def road_entries(tags):
+    """How an exported road is written: its class, the (direction, speed, overtaking) entries, and whether its
+    points run against its direction; None for a road that is not exported."""
+    road_class = ROAD_CLASSES.get(tags.get("highway"))
+    if road_class is None:
+        return None
+    both = parse_speed(tags.get("maxspeed"))
+    forward = parse_speed(tags.get("maxspeed:forward")) or both
+    backward = parse_speed(tags.get("maxspeed:backward")) or both
+    no_overtaking = tags.get("overtaking") == "no"
+    overtaking_fw = no_overtaking or tags.get("overtaking:forward") == "no"
+    overtaking_bw = no_overtaking or tags.get("overtaking:backward") == "no"
+    oneway = tags.get("oneway") in ("yes", "1", "true") or tags.get("highway") in ("motorway", "motorway_link") \
+        or tags.get("junction") == "roundabout"
+    entries = []
+    if forward == backward and overtaking_fw == overtaking_bw:
+        if forward or overtaking_fw:
+            entries.append((0, forward, overtaking_fw))
+    else:
+        if forward or overtaking_fw:
+            entries.append((1, forward, overtaking_fw))
+        if not oneway and (backward or overtaking_bw):
+            entries.append((2, backward, overtaking_bw))
+    if not entries:
+        return None
+    return road_class, entries, tags.get("oneway") == "-1"
+
+
+SIGN_INTO_MINOR_M = 5.0
+
+
+def place_signs(lines, stats):
+    """Pass 1 and 2: every sign and the exported roads it lies on. Returns the signs to write as
+    (kind, lon, lat), the point indices each road must keep, and points to add to roads (a sign moved into
+    the smaller road at a junction): road number -> [(after index, (lon, lat))]."""
+    signs = {}
+    for feature in read_features(lines):
+        geometry = feature.get("geometry") or {}
+        if geometry.get("type") == "Point":
+            kind = sign_kind(feature.get("properties") or {})
+            if kind is not None:
+                signs[tuple(geometry["coordinates"])] = {"kind": kind, "ways": []}
+    roads = 0
+    for feature in read_features(lines):
+        geometry = feature.get("geometry") or {}
+        if geometry.get("type") != "LineString" or len(geometry["coordinates"]) < 2:
+            continue
+        tags = feature.get("properties") or {}
+        if tags.get("railway") and not tags.get("highway"):
+            # A crossing node only on tram tracks is no level crossing with a sign (Munich's Leopoldstraße).
+            for point in geometry["coordinates"]:
+                sign = signs.get(tuple(point))
+                if sign is not None and sign["kind"] == SIGN_LEVEL_CROSSING:
+                    sign.setdefault("rails", set()).add("tram" if tags["railway"] in TRAM else "train")
+            continue
+        written = road_entries(tags)
+        if written is None:
+            continue
+        points = geometry["coordinates"]
+        for index, point in enumerate(points):
+            sign = signs.get(tuple(point))
+            if sign is not None:
+                sign["ways"].append((roads, index, written[0], points))
+        roads += 1
+    out, keep, added = [], {}, {}
+    for (lon, lat), sign in signs.items():
+        ways = sign["ways"]
+        if not ways:
+            stats["signs_off_road"] += 1
+            continue
+        if sign.get("rails") == {"tram"}:
+            stats["tram_crossings"] += 1
+            continue
+        if sign["kind"] in (SIGN_STOP, SIGN_GIVE_WAY) and len(ways) > 1:
+            classes = {way[2] for way in ways}
+            minor = max(ways, key=lambda way: way[2])
+            road, index, _, points = minor
+            if len(classes) > 1 and index in (0, len(points) - 1):
+                # The smaller road ends at the junction: the sign stands on it, before the junction.
+                other = points[1] if index == 0 else points[-2]
+                length = meters(lat, lon, other[1], other[0])
+                share = min(SIGN_INTO_MINOR_M, length / 2) / length if length > 0 else 0
+                moved = (lon + (other[0] - lon) * share, lat + (other[1] - lat) * share)
+                added.setdefault(road, []).append((0 if index == 0 else len(points) - 2, moved))
+                out.append((sign["kind"], moved[0], moved[1]))
+                stats["signs_moved"] += 1
+                continue
+        for road, index, _, _ in ways:
+            keep.setdefault(road, set()).add(index)
+        out.append((sign["kind"], lon, lat))
+    return out, keep, added
 
 
 def build(country, pbfs, data_date, out_dir="dist", work="work"):
@@ -247,59 +374,37 @@ def build(country, pbfs, data_date, out_dir="dist", work="work"):
         target["signs"] += bytes([kind]) + varint(zigzag(e5(lat) - origin_lat)) + varint(zigzag(e5(lon) - origin_lon))
         target["sign_count"] += 1
 
-    for feature in filtered_features(country, pbfs, work):
+    stats.update(signs_off_road=0, signs_moved=0, tram_crossings=0)
+    lines = filtered_features(country, pbfs, work)
+    placed, keep, added = place_signs(lines, stats)
+    for kind, lon, lat in placed:
+        add_sign(kind, lon, lat)
+        stats["signs"] += 1
+    road = -1
+    for feature in read_features(lines):
         tags = feature.get("properties") or {}
         geometry = feature.get("geometry") or {}
-        if geometry.get("type") == "Point":
-            lon, lat = geometry["coordinates"]
-            kind = None
-            if tags.get("highway") == "stop":
-                kind = SIGN_STOP
-            elif tags.get("highway") == "give_way":
-                kind = SIGN_GIVE_WAY
-            elif tags.get("railway") == "level_crossing":
-                kind = SIGN_LEVEL_CROSSING
-            elif tags.get("highway") == "crossing" and (tags.get("crossing") in ("zebra", "uncontrolled", "marked")
-                                                         or tags.get("crossing_ref") == "zebra"):
-                kind = SIGN_ZEBRA
-            if kind is None:
-                continue
-            add_sign(kind, lon, lat)
-            stats["signs"] += 1
+        if geometry.get("type") != "LineString" or len(geometry["coordinates"]) < 2:
             continue
-        if geometry.get("type") != "LineString":
+        if tags.get("railway") and not tags.get("highway"):
             continue
-        road_class = ROAD_CLASSES.get(tags.get("highway"))
-        if road_class is None:
-            continue
-        points = geometry["coordinates"]
-        if len(points) < 2:
-            continue
-        both = parse_speed(tags.get("maxspeed"))
-        forward = parse_speed(tags.get("maxspeed:forward")) or both
-        backward = parse_speed(tags.get("maxspeed:backward")) or both
-        no_overtaking = tags.get("overtaking") == "no"
-        overtaking_fw = no_overtaking or tags.get("overtaking:forward") == "no"
-        overtaking_bw = no_overtaking or tags.get("overtaking:backward") == "no"
-        oneway = tags.get("oneway") in ("yes", "1", "true") or tags.get("highway") in ("motorway", "motorway_link") \
-            or tags.get("junction") == "roundabout"
-        reverse = tags.get("oneway") == "-1"
-        entries = []
-        if forward == backward and overtaking_fw == overtaking_bw:
-            if forward or overtaking_fw:
-                entries.append((0, forward, overtaking_fw))
-        else:
-            if forward or overtaking_fw:
-                entries.append((1, forward, overtaking_fw))
-            if not oneway and (backward or overtaking_bw):
-                entries.append((2, backward, overtaking_bw))
-        if not entries:
+        written = road_entries(tags)
+        if written is None:
             stats["skipped"] += 1
             continue
+        road += 1
+        road_class, entries, reverse = written
+        points = list(geometry["coordinates"])
+        fixed = set(keep.get(road, ()))
+        # A sign moved into this road: a point of its own, kept, right after its index (inserted back to front).
+        for after, point in sorted(added.get(road, []), key=lambda item: item[0], reverse=True):
+            points.insert(after + 1, list(point))
+            fixed = {index + 1 if index > after else index for index in fixed} | {after + 1}
         if reverse:
             points = list(reversed(points))
+            fixed = {len(points) - 1 - index for index in fixed}
         stats["roads"] += 1
-        simple = simplify(points, SIMPLIFY_M)
+        simple = simplify(points, SIMPLIFY_M, fixed)
         for piece in pieces(simple):
             mid = piece[len(piece) // 2]
             target = cell(mid[0], mid[1])

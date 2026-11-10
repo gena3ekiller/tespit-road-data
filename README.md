@@ -38,5 +38,9 @@ A block, after inflating:
   before. A piece is at most about 800 m long and sits in the cell of its middle point.
 - `varint` sign count, then per sign: type `u8` (1 stop, 2 give way, 3 level crossing, 4 zebra crossing) and a
   zig-zag `varint` pair relative to the cell's corner.
+- Since the packs of 10 November 2026 (header date `2026-11-10` or later) every sign is a point of the road(s) it
+  stands on, so it lies exactly on their line; signs on no road of the pack are left out, a stop or give-way on the
+  node where a bigger and a smaller road meet stands 5 m into the smaller one, and level crossings only on tram
+  tracks are left out. The apps then count a sign only right on the car's road (1.5 m instead of 4 m).
 
 Code: MIT. Data: ODbL 1.0.
